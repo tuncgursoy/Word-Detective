@@ -17,6 +17,7 @@ public class ServerForm extends JFrame {
     ServerForm()
     {
 
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
 
         add(panel1);

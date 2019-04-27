@@ -29,11 +29,11 @@ public class server
         inputStream = new Scanner(new InputStreamReader(socket.getInputStream()));
         return inputStream;
     }
-    void sendOutput(String send) throws IOException
-    {
-        outputstream = new PrintWriter(new DataOutputStream(socket.getOutputStream()));
-        outputstream.println(send);
-        outputstream.flush();
+        void sendOutput(String send) throws IOException
+        {
+            outputstream = new PrintWriter(new DataOutputStream(socket.getOutputStream()));
+            outputstream.println(send);
+            outputstream.flush();
     }
     void exit()
     {

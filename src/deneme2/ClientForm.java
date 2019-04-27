@@ -11,6 +11,7 @@ public class ClientForm extends JFrame{
 
     ClientForm()
     {
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         add(panel1);
         setSize(400,500);
         JScrollPane.createHorizontalScrollBar();
