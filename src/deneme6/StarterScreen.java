@@ -13,8 +13,7 @@ import java.io.*;
 public class StarterScreen extends JFrame
 {
     Selection selection;
-    StarterScreen()
-    {
+    StarterScreen() throws IOException {
         selection = new Selection();
 
 

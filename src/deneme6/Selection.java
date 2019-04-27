@@ -10,6 +10,8 @@ import java.awt.event.ActionListener;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.io.IOException;
+import cv.deneme2.ClientForm;
+import cv.deneme2.ServerForm;
 
 public class Selection extends JFrame
 {
@@ -21,8 +23,8 @@ public class Selection extends JFrame
         JRadioButton ServerRadio = new JRadioButton();
         JRadioButton ClientRadio = new JRadioButton();
 
-        Selection()
-        {
+        Selection() throws IOException {
+
 
             Dimension dimension = Toolkit.getDefaultToolkit().getScreenSize();
             setVisible(false);
@@ -150,7 +152,9 @@ public class Selection extends JFrame
                         try {
                             setVisible(false);
                             dispose();
-                            Main_Server.main(new String[]{});
+                            ServerForm serverForm = null;
+                            serverForm = new ServerForm();
+                            serverForm.setVisible(true);
                         } catch (IOException e1) {
                             e1.printStackTrace();
                         }
@@ -159,15 +163,15 @@ public class Selection extends JFrame
                     }else if (ClientRadio.isSelected())
                     {
 
+                        setVisible(false);
+                        dispose();
+                        ClientForm clientForm = null;
                         try {
-                            setVisible(false);
-                            dispose();
-                            ClientMain.main(new String[]{});
+                            clientForm = new ClientForm();
                         } catch (IOException e1) {
                             e1.printStackTrace();
                         }
-
-
+                        clientForm.setVisible(true);
 
 
                     }
