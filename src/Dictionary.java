@@ -1,11 +1,10 @@
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 import java.util.Random;
 
 public class Dictionary {
 	String randomWord = "";
-   ArrayList<String> dictionary = new ArrayList<String> (Arrays.asList(
+   static ArrayList<String> dictionary = new ArrayList<String> (Arrays.asList(
 	"Adult",
 	"Aeroplane",
 	"Air",
@@ -172,7 +171,7 @@ public class Dictionary {
 	"Stomach",
 	"Sun",
 	"Sunglasses",
-	"Swimming Pool",
+	"Swimming\nPool",
 	"Sword",
 	"Table",
 	"Teeth",
@@ -202,7 +201,7 @@ public class Dictionary {
 	)
 );
    
-   public String randomWord() {
+   static String randomWord() {
 	   Random r = new Random();
 	   int low = 1, high = 193;
 	   int result = r.nextInt(high-low) + low;

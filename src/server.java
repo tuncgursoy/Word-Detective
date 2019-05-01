@@ -1,5 +1,3 @@
-package deneme2;
-
 import java.io.DataOutputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -8,11 +6,11 @@ import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.Scanner;
 
-public class server
+public  class server
 {
     private PrintWriter outputstream;
-    private Scanner inputStream;
-    private Socket socket;
+    private static Scanner inputStream;
+    private static Socket socket;
     public void setServer(int port) throws IOException {
         try {
             System.out.println("--------Waiting for Connetion-------");
@@ -25,8 +23,9 @@ public class server
         }
 
     }
-    Scanner getinput() throws IOException {
+     Scanner getinput() throws IOException {
         inputStream = new Scanner(new InputStreamReader(socket.getInputStream()));
+
         return inputStream;
     }
         void sendOutput(String send) throws IOException
