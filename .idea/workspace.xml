@@ -185,10 +185,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="731" />
-    <option name="y" value="40" />
-    <option name="width" value="980" />
-    <option name="height" value="1040" />
+    <option name="x" value="-8" />
+    <option name="width" value="977" />
+    <option name="height" value="1038" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -295,19 +294,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="deneme6.main" />
-      <module name="Word-Detective" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="deneme6.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="main1 (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Deneme7.main1" />
       <module name="Word-Detective" />
@@ -317,6 +303,13 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="main1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main1" />
+      <module name="Word-Detective" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -331,10 +324,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.main2" />
+        <item itemvalue="Application.main1" />
         <item itemvalue="Application.main (1)" />
         <item itemvalue="Application.main1 (1)" />
         <item itemvalue="Application.TalkingScreen" />
-        <item itemvalue="Application.main" />
       </list>
     </recent_temporary>
   </component>
