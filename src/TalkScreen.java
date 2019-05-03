@@ -4,16 +4,18 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.IOException;
 import java.net.Inet4Address;
+import java.util.ArrayList;
 
 public class TalkScreen extends JFrame
 {
      private int port=6788;
     JTextArea textArea;
     JTextField textField;
-     private String Ipaddr;
-     static client client;
-     static server server;
-    String UserName;
+     static String Ipaddr;
+     private client client;
+       private server server;
+     private String UserName;
+
 
     Runnable runnable = new Runnable() {
         @Override
@@ -26,6 +28,7 @@ public class TalkScreen extends JFrame
                 if (StartScreen.temp == 1) {
                     while (flag) {
                         try {
+
                             server.sendOutput("-");
                         } catch (IOException e) {
                             e.printStackTrace();
@@ -69,7 +72,7 @@ public class TalkScreen extends JFrame
 
                     }
                     try {
-                        Thread.sleep(2000);
+                        Thread.sleep(250);
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
@@ -96,6 +99,8 @@ public class TalkScreen extends JFrame
             UserName = JOptionPane.showInputDialog("Enter a UserName");
             StartServerorClient();
         } catch (IOException e) {
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
 
@@ -175,7 +180,7 @@ public class TalkScreen extends JFrame
 
     }
 
-    void StartServerorClient() throws IOException {
+    void StartServerorClient() throws IOException, ClassNotFoundException {
         if (StartScreen.temp==1)
         {
 
@@ -193,11 +198,13 @@ public class TalkScreen extends JFrame
     void  Server() throws IOException {
          server = new server();
          server.setServer(port);
+        server.sendArraylist(StartScreen.card.list);
     }
-    void Client() throws IOException
-    {
+    void Client() throws IOException, ClassNotFoundException {
         client = new client();
         client.setclient(Ipaddr,port);
+        StartScreen.card.list.clear();
+        StartScreen.card.list =client.getobject();
     }
 
 }

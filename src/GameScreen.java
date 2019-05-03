@@ -1,4 +1,5 @@
 import javax.swing.*;
+import java.awt.*;
 
 public class GameScreen extends JFrame
 {
@@ -12,6 +13,8 @@ public class GameScreen extends JFrame
 
 
         setVisible(false);
+        setBackground(Color.gray);
+        setResizable(false);
 
         setSize(1000,700);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

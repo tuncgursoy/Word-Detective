@@ -1,5 +1,4 @@
-public class Card1
-{
+public class Card1 {
     String color = "", team = "",CardString;
     static int  pinkcount= 0;
     static int blueCount = 0 ;
@@ -12,7 +11,7 @@ public class Card1
         this.CardString = dictionary.randomWord;
 
 
-        this.team = team;
+        this.team = " ";
             double i = Math.random()*100;
         if (i<50 && blueCount<13)
         {
@@ -29,6 +28,13 @@ public class Card1
                 new Card1();
             }
 
+
+
+    }
+    public Card1(String stringname, String Color, String team) {
+        this.CardString = stringname;
+        this.color = Color;
+        this.team = team;
 
     }
 }

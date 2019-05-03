@@ -1,15 +1,14 @@
-import java.io.DataOutputStream;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.PrintWriter;
+import java.io.*;
 import java.net.Socket;
+import java.util.ArrayList;
+import java.util.Base64;
 import java.util.Scanner;
 
-public class client
+ class client
 {
-    Scanner inputStream;
-    PrintWriter outputstream;
-    Socket socket;
+    private Scanner inputStream;
+     private PrintWriter outputstream;
+   private Socket socket;
     void setclient(String ip,int port) throws IOException
     {
         try {
@@ -36,5 +35,49 @@ public class client
         inputStream.close();
         outputstream.close();
     }
+    ArrayList<Card1> getobject() throws IOException, ClassNotFoundException {
+
+        inputStream = new Scanner(new InputStreamReader(socket.getInputStream()));
+        ArrayList<Card1> temp = new ArrayList<>();
+        String string = new String(inputStream.nextLine());
+
+
+            String decoedString = new String(string);
+
+
+            String[] list1 = decoedString.split(",");
+            int i = 0;
+            String[] list2 = new String[25];
+            String[] temp1;
+            for (String a : list1) {
+                list2[i] = a;
+                i++;
+            }
+            i = 0;
+            for (String a : list2) {
+                temp1 = a.split("--");
+                try {
+                    temp.add(new Card1(temp1[0], temp1[1], temp1[2]));
+                    Thread.sleep(150);
+                }catch (Exception e)
+                {
+                    System.out.println("Error  " +e );
+                }
+            }
+
+        return temp;
+
+    }
+    Scanner getinputmaouse() throws IOException {
+        inputStream = new Scanner(new InputStreamReader(socket.getInputStream()));
+        return inputStream;
+    }
+    void sendOutputmouse(String send) throws IOException
+    {
+        outputstream = new PrintWriter(new DataOutputStream(socket.getOutputStream()));
+        outputstream.println(send);
+        outputstream.flush();
+    }
+
 
 }

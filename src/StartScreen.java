@@ -8,7 +8,7 @@ import java.awt.event.MouseListener;
 public class StartScreen extends JFrame
 {
     static int temp = 0 ;
-    static Card card;
+     static Card card;
 
     StartScreen()
     {
