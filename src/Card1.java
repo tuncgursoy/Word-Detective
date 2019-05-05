@@ -1,5 +1,8 @@
+import java.awt.*;
+
 public class Card1 {
     String color = "", team = "",CardString;
+    Rectangle rectangle;
     static int  pinkcount= 0;
     static int blueCount = 0 ;
     static int blackcount = 0 ;

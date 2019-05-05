@@ -1,3 +1,4 @@
+import java.awt.*;
 import java.util.ArrayList;
 
 public class Card {
@@ -6,6 +7,7 @@ public class Card {
       ArrayList<String> Stringlist = new ArrayList();
       ArrayList<String> Colors = new ArrayList<>();
       ArrayList<String> Teams = new ArrayList<>();
+      ArrayList<Rectangle> rectangles = new ArrayList<>();
     public  Card ()
     {
         list= new ArrayList();

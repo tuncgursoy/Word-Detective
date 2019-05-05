@@ -1,8 +1,6 @@
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.MouseEvent;
-import java.awt.event.MouseListener;
-import java.awt.event.MouseMotionListener;
+import java.awt.event.*;
 import java.io.IOException;
 import java.net.Inet4Address;
 import java.util.ArrayList;
@@ -20,6 +18,11 @@ public class Paint extends JPanel implements MouseMotionListener,MouseListener {
     ArrayList<Rectangle> Stringrectangles = new ArrayList<>();
 
     ArrayList<Rectangle> rectangles = new ArrayList<Rectangle>();
+
+    //Red_Timer redTimer = new Red_Timer();
+    //Blue_Timer blueTimer ;
+    //JButton jButton = new JButton("Start");
+
 
 
     public Paint() {
@@ -78,12 +81,33 @@ public class Paint extends JPanel implements MouseMotionListener,MouseListener {
         rectangles.add(new Rectangle(525, 550, 100, 80));
         addMouseMotionListener(this);
         addMouseListener(this);
+        setLayout(null);
+
+
+        //add(redTimer);
+        //redTimer.setBounds(900,20,100,50);
         try {
             StartServerorClient();
         } catch (IOException | ClassNotFoundException e) {
             e.printStackTrace();
         }
         t.start();
+       // add(jButton);
+        /*jButton.setBounds(400,600,100,100);
+        jButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                JOptionPane.showMessageDialog(null,"Blue start");
+
+                blueTimer = new Blue_Timer();
+                blueTimer.buton_pressed = true;
+                blueTimer.setBounds(20,20,100,50);
+
+                //jButton.setEnabled(false);
+                jButton.setVisible(false);
+                add(blueTimer);
+            }
+        });*/
     }
 
     @Override
@@ -103,6 +127,7 @@ public class Paint extends JPanel implements MouseMotionListener,MouseListener {
             g.setColor(Color.BLACK);
             g.drawRect(Stringrectangles.get(r).x, Stringrectangles.get(r).y, Stringrectangles.get(r).width, Stringrectangles.get(r).height);
             g.drawString(StartScreen.card.list.get(r).CardString, Stringrectangles.get(r).x + Stringrectangles.get(r).width / 2 - 10, Stringrectangles.get(r).y + Stringrectangles.get(r).height / 2);
+            StartScreen.card.rectangles = Stringrectangles;
 
         }
     }
