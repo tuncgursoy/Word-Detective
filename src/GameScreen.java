@@ -18,7 +18,7 @@ public class GameScreen extends JFrame
 
         setSize(1000,700);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        Paint a = new Paint();
+        JPanel a = new Paint();
         add(a);
         repaint();
 
