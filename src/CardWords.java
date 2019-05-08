@@ -1,6 +1,6 @@
 public class CardWords {
-   String [] blueTeam = new String[8];
-   String [] pinkTeam = new String[8];
+   static String [] blueTeam = new String[12];
+   static String [] pinkTeam = new String[12];
    
    public void createBlueTeam() {
 	   for(int i = 0; i < blueTeam.length; i++) {
