@@ -6,7 +6,7 @@ import java.net.Inet4Address;
 import java.util.ArrayList;
 
 public class Paint extends JPanel implements MouseMotionListener,MouseListener {
-
+    public static final Color VERY_LIGHT_YELLOW = new Color(255,255,204);
     private server server ;
     private client client;
     private int Port = 4566;
@@ -82,8 +82,8 @@ public class Paint extends JPanel implements MouseMotionListener,MouseListener {
         addMouseMotionListener(this);
         addMouseListener(this);
         setLayout(null);
-
-
+        setBackground(VERY_LIGHT_YELLOW);
+        setFont(new Font("Sans Serif", Font.BOLD, 15));
         //add(redTimer);
         //redTimer.setBounds(900,20,100,50);
         try {
@@ -123,7 +123,6 @@ public class Paint extends JPanel implements MouseMotionListener,MouseListener {
 
         }
         for (int r = 0; r < Stringrectangles.size(); r++) {
-
             g.setColor(Color.BLACK);
             g.drawRect(Stringrectangles.get(r).x, Stringrectangles.get(r).y, Stringrectangles.get(r).width, Stringrectangles.get(r).height);
             g.drawString(StartScreen.card.list.get(r).CardString, Stringrectangles.get(r).x + Stringrectangles.get(r).width / 2 - 10, Stringrectangles.get(r).y + Stringrectangles.get(r).height / 2);

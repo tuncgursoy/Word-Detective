@@ -9,6 +9,7 @@ public class StartScreen extends JFrame
 {
     static int temp = 0 ;
      static Card card;
+    public static final Color VERY_LIGHT_YELLOW = new Color(255,255,204);
 
     StartScreen()
     {
@@ -19,8 +20,8 @@ public class StartScreen extends JFrame
         Dimension dimension = new Dimension(Toolkit.getDefaultToolkit().getScreenSize());
         setLocation((dimension.width-this.getSize().width)/2,(dimension.height-this.getSize().height)/2);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        Font myFont = new Font("Times",Font.BOLD,31);
-
+        Font myFont = new Font("Times",Font.BOLD,28);
+        Font buttonFont = new Font("Times",Font.PLAIN, 15);
 
         JPanel jPanel = new JPanel();
         jPanel.setLayout(null);
@@ -28,22 +29,24 @@ public class StartScreen extends JFrame
         jPanel.setBackground(Color.DARK_GRAY);
         JLabel jLabel = new JLabel("WORD-DETECTIVE");
         jPanel.add(jLabel);
-        jLabel.setBounds(0,60,300,100);
+        jLabel.setBounds(20,60,300,100);
 
         jLabel.setFont(myFont);
         jLabel.setBackground(Color.DARK_GRAY);
         jLabel.setForeground(Color.WHITE);
         JRadioButton Server = new JRadioButton("Server");
-        Server.setBounds(90,400,70,40);
+        Server.setBounds(75,400,70,40);
         jPanel.add(Server);
         Server.setBackground(Color.DARK_GRAY);
         Server.setForeground(Color.WHITE);
+        Server.setFont(buttonFont);
 
         JRadioButton Client = new JRadioButton("Client");
         Client.setForeground(Color.WHITE);
-        Client.setBounds(160,400,70,40);
+        Client.setBounds(155,400,70,40);
         jPanel.add(Client);
         Client.setBackground(Color.DARK_GRAY);
+        Client.setFont(buttonFont);
 
 
         Server.addMouseListener(new MouseListener() {
@@ -115,6 +118,7 @@ public class StartScreen extends JFrame
         JButton StartButton = new JButton("Start");
 
         StartButton.setBounds(100,200,100,40);
+        StartButton.setBackground(VERY_LIGHT_YELLOW);
         StartButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -144,7 +148,8 @@ public class StartScreen extends JFrame
         jPanel.add(StartButton);
 
         JButton ExitButton = new JButton("Exit");
-        ExitButton.setBounds(100,320,100,40);
+        ExitButton.setBounds(100,290,100,40);
+        ExitButton.setBackground(VERY_LIGHT_YELLOW);
         jPanel.add(ExitButton);
         ExitButton.addActionListener(new ActionListener() {
             @Override

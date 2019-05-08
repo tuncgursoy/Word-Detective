@@ -9,9 +9,6 @@ public class GameScreen extends JFrame
     {
 
 
-
-
-
         setVisible(false);
         setBackground(Color.gray);
         setResizable(false);
