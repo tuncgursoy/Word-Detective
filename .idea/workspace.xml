@@ -3,15 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="887b8ef5-27d1-4642-8232-1e640ed1c2b3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Card.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Card1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Card1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GameScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameScreen.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Paint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Paint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/StartScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StartScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TalkScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TalkScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blue.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,32 +17,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/client.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Paint.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="641">
-              <caret line="57" selection-start-line="57" selection-end-line="57" />
+            <state relative-caret-position="-1436">
+              <caret line="340" column="11" selection-start-line="340" selection-start-column="11" selection-end-line="340" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Red_Timer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/server.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="867">
+              <caret line="61" column="12" selection-start-line="61" selection-start-column="12" selection-end-line="61" selection-end-column="12" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Dictionary.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Paint.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="151">
-              <caret line="180" column="66" selection-start-line="180" selection-start-column="66" selection-end-line="180" selection-end-column="66" />
             </state>
           </provider>
         </entry>
@@ -63,7 +55,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/GameScreen.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
+            <state relative-caret-position="255">
               <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -77,10 +69,10 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/StartScreen.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="647">
+            <state relative-caret-position="2176">
               <caret line="133" column="24" selection-start-line="133" selection-start-column="24" selection-end-line="133" selection-end-column="24" />
             </state>
           </provider>
@@ -190,7 +182,7 @@
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-10" />
-    <option name="width" value="979" />
+    <option name="width" value="980" />
     <option name="height" value="1040" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -199,25 +191,25 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Course" />
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="Word-Detective" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Word-Detective" type="462c0819:PsiDirectoryNode" />
+              <item name="deneme2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="deneme2" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Word-Detective" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Word-Detective" type="462c0819:PsiDirectoryNode" />
+              <item name="deneme2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="deneme2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Course" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -271,7 +263,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.main1">
+  <component name="RunManager" selected="Application.main2">
     <configuration name="TalkingScreen" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Deneme7.TalkingScreen" />
       <module name="Word-Detective" />
@@ -396,6 +388,10 @@
       <workItem from="1556794495703" duration="5777000" />
       <workItem from="1556800884988" duration="4040000" />
       <workItem from="1556869087108" duration="6002000" />
+      <workItem from="1557231189495" duration="1876000" />
+      <workItem from="1557249608541" duration="13000" />
+      <workItem from="1557327986123" duration="775000" />
+      <workItem from="1557392114456" duration="699000" />
     </task>
     <task id="LOCAL-00001" summary="Prime15550 second update">
       <created>1556373001388</created>
@@ -436,7 +432,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="132456000" />
+    <option name="totallyTimeSpent" value="135819000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -449,8 +445,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21073826" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22214764" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -461,7 +458,7 @@
       <window_info anchor="bottom" id="Duplicate detector" order="0" weight="0.3286119" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.3286119" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49932885" weight="0.37393767" />
+      <window_info active="true" anchor="bottom" id="Run" order="3" sideWeight="0.49932885" visible="true" weight="0.37393767" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.39943343" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -473,6 +470,7 @@
       <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="bottom" id="Version Control" order="13" sideWeight="0.49932885" weight="0.3286119" />
       <window_info anchor="bottom" id="Messages" order="14" weight="0.32152975" />
+      <window_info anchor="bottom" id="Duplicates" order="15" weight="0.3286119" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -563,7 +561,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/deneme6/StarterScreen.java" />
     <entry file="file://$PROJECT_DIR$/src/deneme1/SocketServer1.java" />
     <entry file="file://$PROJECT_DIR$/src/deneme1/main.java" />
     <entry file="file://$PROJECT_DIR$/src/deneme1/main1.java" />
@@ -605,13 +602,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/blue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blue.java" />
     <entry file="jar://C:/Program Files/Java/jdk-11.0.1/lib/src.zip!/java.base/java/util/Base64.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="139">
@@ -648,26 +639,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/server.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ServerPaint.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-728">
-          <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ServerPaint.java" />
     <entry file="file://$PROJECT_DIR$/src/TalkScreen.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="128">
@@ -705,8 +677,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/client.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="641">
+        <state relative-caret-position="901">
           <caret line="57" selection-start-line="57" selection-end-line="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/server.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="867">
+          <caret line="61" column="12" selection-start-line="61" selection-start-column="12" selection-end-line="61" selection-end-column="12" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -716,19 +698,9 @@
     <entry file="file://$PROJECT_DIR$/src/main2.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="13" selection-start-column="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CardWords.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/GameScreen.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
+        <state relative-caret-position="255">
           <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -736,10 +708,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Paint.java">
+    <entry file="file://$PROJECT_DIR$/src/CardWords.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/StartScreen.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="180" column="66" selection-start-line="180" selection-start-column="66" selection-end-line="180" selection-end-column="66" />
+        <state relative-caret-position="2176">
+          <caret line="133" column="24" selection-start-line="133" selection-start-column="24" selection-end-line="133" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -749,10 +724,24 @@
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/StartScreen.java">
+    <entry file="file://$PROJECT_DIR$/src/main1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="647">
-          <caret line="133" column="24" selection-start-line="133" selection-start-column="24" selection-end-line="133" selection-end-column="24" />
+        <state>
+          <caret column="13" selection-start-column="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Red_Timer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Paint.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1436">
+          <caret line="340" column="11" selection-start-line="340" selection-start-column="11" selection-end-line="340" selection-end-column="11" />
         </state>
       </provider>
     </entry>

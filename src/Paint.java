@@ -82,6 +82,7 @@ public class Paint extends JPanel implements MouseMotionListener,MouseListener {
         addMouseMotionListener(this);
         addMouseListener(this);
         setLayout(null);
+        fitRectangle1.start();
 
 
         //add(redTimer);
@@ -91,7 +92,8 @@ public class Paint extends JPanel implements MouseMotionListener,MouseListener {
         } catch (IOException | ClassNotFoundException e) {
             e.printStackTrace();
         }
-        t.start();
+        send.start();
+        read.start();
        // add(jButton);
         /*jButton.setBounds(400,600,100,100);
         jButton.addActionListener(new ActionListener() {
@@ -192,23 +194,6 @@ public class Paint extends JPanel implements MouseMotionListener,MouseListener {
 
               cv.setLocation(e.getX(),e.getY());
 
-             if(StartScreen.temp == 1) {
-
-
-                try {
-                    server.sendOutputmouse(  (cv.y)+ "-" + (cv.x)+"-"+tempiplace);
-                } catch (IOException ex) {
-                    ex.printStackTrace();
-                }
-                }else {
-
-                    try {
-                        client.sendOutputmouse((cv.y)+ "-" + (cv.x)+"-"+tempiplace);
-                    } catch (IOException ex) {
-                        ex.printStackTrace();
-                    }
-
-                }
             }
         }
 
@@ -263,10 +248,7 @@ public class Paint extends JPanel implements MouseMotionListener,MouseListener {
 
                         }
                     }
-                    {
 
-
-                    }
 
 
                 } else {
@@ -316,6 +298,96 @@ public class Paint extends JPanel implements MouseMotionListener,MouseListener {
 
     };
     Thread t = new Thread(runnable);
+    Runnable runnable1 = new Runnable() {
+        @Override
+        public void run() {
+            if (StartScreen.temp == 1){
+            while (true) {
+                int Arraylocation = 0;
+                for (Rectangle rectangle : rectangles) {
+
+                    String send = Arraylocation +"-"+rectangle.x+"-"+rectangle.y+"";
+                    try {
+                        server.sendOutputmouse(send);
+                        Thread.sleep(1000);
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                    Arraylocation++;
+                }
+            }
+            }else {
+                while (true) {
+                    int Arraylocation = 0;
+                    for (Rectangle rectangle : rectangles) {
+
+                        String send = Arraylocation +"-"+rectangle.x+rectangle.y+"";
+                        try {
+                            server.sendOutputmouse(send);
+                            Thread.sleep(1000);
+                        } catch (IOException e) {
+                            e.printStackTrace();
+                        } catch (InterruptedException e) {
+                            e.printStackTrace();
+                        }
+                        Arraylocation++;
+                    }
+                }
+            }
+        }
+    };
+    Thread send = new Thread(runnable1);
+    Runnable runnable2 = new Runnable() {
+        @Override
+        public void run() {
+            if (StartScreen.temp == 1){
+                while (true) {
+                    String input = "";
+                    try {
+                         input = server.getinputmouse().nextLine();
+
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                    String[] input1 = input.split("-");
+
+                    for (Rectangle rectangle : rectangles) {
+                        if (rectangle == rectangles.get(Integer.parseInt(input1[0])))
+                        {
+                            rectangle.setLocation(Integer.parseInt(input1[1]),Integer.parseInt(input1[2]));
+                        }
+
+
+                    }
+                    repaint();
+                }
+            }else {
+                while (true) {
+                    String input = "";
+                    try {
+                        input = client.getinputmaouse().nextLine();
+
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                    String[] input1 = input.split("-");
+                    int Arraylocation  ;
+                    for (Rectangle rectangle : rectangles) {
+                        if (rectangle == rectangles.get(Integer.parseInt(input1[0])))
+                        {
+                            rectangle.setLocation(Integer.parseInt(input1[1]),Integer.parseInt(input1[2]));
+                        }
+
+
+                    }
+                    repaint();
+                }
+            }
+        }
+    };
+    Thread read = new Thread(runnable2);
 
 
     void StartServerorClient() throws IOException, ClassNotFoundException {
@@ -336,6 +408,32 @@ public class Paint extends JPanel implements MouseMotionListener,MouseListener {
         client = new client();
         client.setclient(TalkScreen.Ipaddr,Port);
     }
+    Runnable fitRectangle  = new Runnable() {
+        @Override
+        public void run() {
+            while(true)
+            {
+                for(Rectangle r : Stringrectangles)
+                {
+                    for (Rectangle t : rectangles)
+                    {
+                        if (r.contains(t.x,t.y))
+                        {
+                            t.setLocation(r.x,r.y);
+                            repaint();
+                        }
+                    }
+                }
+                try {
+                    Thread.sleep(500);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+
+        }
+    };
+    Thread fitRectangle1 = new Thread(fitRectangle);
 }
 
 
