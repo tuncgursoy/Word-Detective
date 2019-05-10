@@ -3,9 +3,9 @@ import java.util.ArrayList;
 
 public class Card {
    String color = "", team = "",CardString;
-          ArrayList<Card1> list;
+          static ArrayList<Card1> list;
       ArrayList<String> Stringlist = new ArrayList();
-      ArrayList<String> Colors = new ArrayList<>();
+     static ArrayList<String> Colors = new ArrayList<>();
       ArrayList<String> Teams = new ArrayList<>();
       ArrayList<Rectangle> rectangles = new ArrayList<>();
     public  Card ()

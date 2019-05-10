@@ -130,13 +130,13 @@ public class StartScreen extends JFrame
                     new TalkScreen().setVisible(true);
                     new GameScreen().setVisible(true);
 
+
                 }else if (Client.isSelected())
                 {
                     card = new Card();
                     setVisible(false);
                     temp--;
-                    new TalkScreen().setVisible(true);
-                    new GameScreen().setVisible(true);
+                    thread.start();
 
                 }
                 else
@@ -160,4 +160,14 @@ public class StartScreen extends JFrame
         });
         repaint();
     }
+    Runnable run = new Runnable() {
+        @Override
+        public void run() {
+            new TalkScreen().setVisible(true);
+            new GameScreen().setVisible(true);
+            new TableScreen().setVisible(true
+            );
+        }
+    };
+    Thread thread = new Thread(run);
 }

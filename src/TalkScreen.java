@@ -2,6 +2,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.KeyEvent;
 import java.io.IOException;
 import java.net.Inet4Address;
 import java.util.ArrayList;
@@ -15,6 +16,7 @@ public class TalkScreen extends JFrame
      private client client;
        private server server;
      private String UserName;
+    static JButton SendButton;
 
 
     Runnable runnable = new Runnable() {
@@ -121,6 +123,8 @@ public class TalkScreen extends JFrame
 
 
 
+        KeyListener keyListener = new KeyListener();
+
 
 
          textArea = new JTextArea();
@@ -137,11 +141,13 @@ public class TalkScreen extends JFrame
 
          textField = new JTextField();
         textField.setBounds(1,520,300,20);
+        textField.addKeyListener(keyListener);
         jPanel.add(textField);
 
-        JButton SendButton = new JButton("Send");
+        SendButton = new JButton("Send");
         SendButton.setBounds(320,510,70,40);
         jPanel.add(SendButton);
+
         SendButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -207,4 +213,12 @@ public class TalkScreen extends JFrame
         StartScreen.card.list =client.getobject();
     }
 
+    public void keyPressed(KeyEvent e) {
+        System.out.println("Key Pressed " + KeyEvent.getKeyText(e.getKeyCode()));
+        if("Right".equals(KeyEvent.getKeyText(e.getKeyCode())))
+            System.out.println("Right Button Detected");
+        if(e.getKeyCode()==KeyEvent.VK_ENTER)
+        {SendButton.doClick();}
+
+    }
 }
