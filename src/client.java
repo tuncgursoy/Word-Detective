@@ -56,14 +56,14 @@ import java.util.Scanner;
             i = 0;
             for (String a : list2) {
                 try {
-                    Thread.sleep(50);
+                    Thread.sleep(500);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
                 temp1 = a.split("--");
                 try {
                     temp.add(new Card1(temp1[0], temp1[1], temp1[2]));
-                    Thread.sleep(500);
+                    Thread.sleep(300);
                 }catch (Exception e)
                 {
                     System.out.println("Error  " +e );

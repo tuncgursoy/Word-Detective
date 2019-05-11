@@ -200,11 +200,22 @@ public class Dictionary {
 	"X-ray"
 	)
 );
-   
+   static ArrayList<Integer> a12 = new ArrayList<>();
    static String randomWord() {
 	   Random r = new Random();
 	   int low = 1, high = 193;
 	   int result = r.nextInt(high-low) + low;
+	   for (int i : a12)
+	   {
+	   	if (result== i)
+	   	{
+
+	   		result = r.nextInt(high-low)+low;
+
+		}
+	   }
+	   a12.add(result);
+
 	   return dictionary.get(result);
    }
    

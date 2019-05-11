@@ -165,8 +165,7 @@ public class StartScreen extends JFrame
         public void run() {
             new TalkScreen().setVisible(true);
             new GameScreen().setVisible(true);
-            new TableScreen().setVisible(true
-            );
+            new TableScreen().setVisible(true);
         }
     };
     Thread thread = new Thread(run);

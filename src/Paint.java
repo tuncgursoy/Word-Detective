@@ -117,6 +117,7 @@ public class Paint extends JPanel implements MouseMotionListener,MouseListener {
     @Override
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
+
         for (int a = 0; a < 12; a++) {
             g.setColor(Color.pink);
             g.fillRect(rectangles.get(a).x, rectangles.get(a).y, rectangles.get(a).width, rectangles.get(a).height);
@@ -307,7 +308,7 @@ public class Paint extends JPanel implements MouseMotionListener,MouseListener {
         @Override
         public void run() {
             if (StartScreen.temp == 1){
-                while (true) {
+               while (true) {
                     int Arraylocation = 0;
                     for (Rectangle rectangle : rectangles) {
 
@@ -384,8 +385,6 @@ public class Paint extends JPanel implements MouseMotionListener,MouseListener {
                         {
                             rectangle.setLocation(Integer.parseInt(input1[1]),Integer.parseInt(input1[2]));
                         }
-
-
                     }
                     repaint();
                 }

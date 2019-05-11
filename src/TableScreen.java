@@ -11,10 +11,10 @@ public class TableScreen extends JFrame
 
         setSize(500,500);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        JPanel a = new Table();
+        Table a = new Table();
         add(a);
 
 
-        repaint();
+
     }
 }
