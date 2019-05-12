@@ -3,9 +3,9 @@ import java.awt.*;
 public class Card1 {
     String color = "", team = "",CardString;
     Rectangle rectangle;
-    static int  pinkcount= 0;
-    static int blueCount = 0 ;
-    static int blackcount = 0 ;
+    static public int  pinkcount= 0;
+    static public int blueCount = 0 ;
+    static public int blackcount = 0 ;
     Dictionary dictionary = new Dictionary();
     Card1()
     {
@@ -16,20 +16,19 @@ public class Card1 {
 
         this.team = " ";
             double i = Math.random()*100;
-        if (i<50 && blueCount<13)
+        if (i<50 && blueCount<12)
         {
             this.color = "blue";
-        }else if (pinkcount<13)
-        {
-            this.color = "pink";
+            blueCount++;
         }else if (blackcount == 0)
+        {color = "black";
+            blackcount++;
+        }else if (pinkcount<12)
             {
-                color = "black";
+                this.color = "pink";
+                pinkcount++;
             }
-        else
-            {
-                new Card1();
-            }
+
 
 
 

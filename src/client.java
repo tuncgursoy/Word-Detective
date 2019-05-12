@@ -56,7 +56,7 @@ import java.util.Scanner;
             i = 0;
             for (String a : list2) {
                 try {
-                    Thread.sleep(500);
+                    Thread.sleep(300);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
