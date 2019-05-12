@@ -28,6 +28,11 @@ public class Card1 {
                 this.color = "pink";
                 pinkcount++;
             }
+        else if (blueCount<12)
+            {
+                this.color = "blue";
+                blueCount++;
+            }
 
 
 

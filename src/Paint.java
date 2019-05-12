@@ -1,15 +1,22 @@
+import jdk.nashorn.internal.ir.WhileNode;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 import java.io.IOException;
+import java.io.StreamCorruptedException;
 import java.net.Inet4Address;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.concurrent.ForkJoinPool;
 
 public class Paint extends JPanel implements MouseMotionListener,MouseListener {
 
     private server server ;
     private client client;
     private int Port = 4566;
+   ;
+
 
     int[] tempx = new int[2];
     int[] tempy = new int[2];
@@ -19,9 +26,7 @@ public class Paint extends JPanel implements MouseMotionListener,MouseListener {
 
     ArrayList<Rectangle> rectangles = new ArrayList<Rectangle>();
 
-    //Red_Timer redTimer = new Red_Timer();
-    //Blue_Timer blueTimer ;
-    //JButton jButton = new JButton("Start");
+
 
 
 
@@ -87,8 +92,7 @@ public class Paint extends JPanel implements MouseMotionListener,MouseListener {
 
 
 
-        //add(redTimer);
-        //redTimer.setBounds(900,20,100,50);
+
         try {
             StartServerorClient();
         } catch (IOException | ClassNotFoundException e) {
@@ -96,27 +100,16 @@ public class Paint extends JPanel implements MouseMotionListener,MouseListener {
         }
         send.start();
         read.start();
-        // add(jButton);
-        /*jButton.setBounds(400,600,100,100);
-        jButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                JOptionPane.showMessageDialog(null,"Blue start");
+        Scorekeep.start();
+        Scorestart.start();
 
-                blueTimer = new Blue_Timer();
-                blueTimer.buton_pressed = true;
-                blueTimer.setBounds(20,20,100,50);
 
-                //jButton.setEnabled(false);
-                jButton.setVisible(false);
-                add(blueTimer);
-            }
-        });*/
     }
 
     @Override
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
+
 
         for (int a = 0; a < 12; a++) {
             g.setColor(Color.pink);
@@ -131,7 +124,7 @@ public class Paint extends JPanel implements MouseMotionListener,MouseListener {
 
             g.setColor(Color.BLACK);
             g.drawRect(Stringrectangles.get(r).x, Stringrectangles.get(r).y, Stringrectangles.get(r).width, Stringrectangles.get(r).height);
-            g.drawString(StartScreen.card.list.get(r).CardString, Stringrectangles.get(r).x + Stringrectangles.get(r).width / 2 - 10, Stringrectangles.get(r).y + Stringrectangles.get(r).height / 2);
+            g.drawString(Card.list.get(r).CardString, Stringrectangles.get(r).x + Stringrectangles.get(r).width / 2 - 10, Stringrectangles.get(r).y + Stringrectangles.get(r).height / 2);
             StartScreen.card.rectangles = Stringrectangles;
 
         }
@@ -203,6 +196,8 @@ public class Paint extends JPanel implements MouseMotionListener,MouseListener {
         }
 
         repaint();
+
+
     }
 
     @Override
@@ -438,6 +433,80 @@ public class Paint extends JPanel implements MouseMotionListener,MouseListener {
         }
     };
     Thread fitRectangle1 = new Thread(fitRectangle);
+
+    Runnable runnable3 = new Runnable() {
+        @Override
+        public void run() {
+            while (true) {
+                for (Rectangle a : Stringrectangles) {
+                    for (Rectangle b : rectangles) {
+                        if (a.contains(b)) {
+                            String a1 = null;
+                            if (Card.list.get(Stringrectangles.indexOf(a)).color.equalsIgnoreCase("black") && rectangles.indexOf(b) < 24 && rectangles.indexOf(b) > 12) {
+                                Score.isBlueWon = false;
+                                break;
+                            } else if (Card.list.get(Stringrectangles.indexOf(a)).color.equalsIgnoreCase("black") && rectangles.indexOf(b) < 12) {
+                                Score.isBlueWon = true;
+                                break;
+                            } else if (rectangles.indexOf(b) < 12) {
+                                a1 = "pink";
+                            } else if (rectangles.indexOf(b) < 24 && rectangles.indexOf(b) > 12) {
+                                a1 = "blue";
+                            }
+                            Card.list.get(Stringrectangles.indexOf(a)).team = a1;
+                        }
+                    }
+                }
+                try {
+                    Thread.sleep(1000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+
+        }
+    };
+    Thread Scorekeep = new Thread(runnable3);
+    Runnable runnable4 = new Runnable() {
+        @Override
+        public void run() {
+            boolean running = true;
+            int lastscoreBlue = 0, lastScorePink = 0;
+            while (running)
+            {
+                for (Card1 a : Card.list)
+                {
+                    if (a.team.equalsIgnoreCase("blue"))
+                    {
+                        Score.BlueScore++;
+                    }else if (a.team.equalsIgnoreCase("pink"))
+                    {
+                        Score.pinkScore++;
+                    }
+
+                }
+                Score.BlueScore -= lastscoreBlue;
+                lastscoreBlue = Score.BlueScore;
+                Score.pinkScore -= lastScorePink;
+                lastScorePink = Score.pinkScore;
+                System.out.println("Blue: "+Score.BlueScore);
+                System.out.println("Pink: "+Score.pinkScore);
+                try {
+                    Thread.sleep(500);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+    };
+    Thread Scorestart = new Thread(runnable4);
+
+
+
+
+
+
+
 }
 
 
