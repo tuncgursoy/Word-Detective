@@ -183,7 +183,7 @@ public class Paint extends JPanel implements MouseMotionListener,MouseListener {
 
     @Override
     public void mouseDragged(MouseEvent e) {
-        if (StartScreen.temp == 0) {
+        if (StartScreen.temp == -1) {
 
 
             for (Rectangle cv : rectangles) {
