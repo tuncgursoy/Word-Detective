@@ -28,7 +28,7 @@ public class Paint extends JPanel implements MouseMotionListener,MouseListener {
 
 
 
-
+Blue_Timer blueTimer = new Blue_Timer();
 
     public Paint() {
 
@@ -88,6 +88,8 @@ public class Paint extends JPanel implements MouseMotionListener,MouseListener {
         addMouseMotionListener(this);
         addMouseListener(this);
         setLayout(null);
+        blueTimer.setBounds(20,20,100,50);
+        add(blueTimer);
         fitRectangle1.start();
 
 

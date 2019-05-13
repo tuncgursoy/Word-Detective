@@ -135,10 +135,11 @@ public class StartScreen extends JFrame
                 }else if (Client.isSelected())
                 {
                     card = new Card();
+                    temp = 0 ;
                     setVisible(false);
-                    temp--;
                     new TalkScreen().setVisible(true);
                     new GameScreen().setVisible(true);
+
 
                 }
                 else
@@ -167,6 +168,8 @@ public class StartScreen extends JFrame
         public void run() {
             new TalkScreen().setVisible(true);
             new GameScreen().setVisible(true);
+
+
             new TableScreen().setVisible(true);
         }
     };

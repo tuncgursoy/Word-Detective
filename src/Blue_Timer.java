@@ -11,6 +11,7 @@ public class Blue_Timer extends JPanel{
     int time = 300;
     int minute,seconds;
     JTextArea jLabel ;
+    JButton jButton;
     boolean buton_pressed = false;
     Blue_Timer()
     {
@@ -24,17 +25,20 @@ public class Blue_Timer extends JPanel{
         jLabel.setBackground(Color.BLUE);
         jLabel.setFont(myfont);
         jLabel.setForeground(Color.white);
-        JButton jButton = new JButton("Start");
-        if (StartScreen.temp==1){}
-        add(jButton);
+        jButton = new JButton("Start");
+        if (StartScreen.temp==1) {
+            add(jButton);
+        }
+        time1.start();
         jButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
 
-                time1.start();
+
                 t.start();
                 jButton.setVisible(false);
                 jButton.setEnabled(false);
+                buton_pressed = true;
             }
         });
         add(jLabel);
@@ -97,30 +101,47 @@ public class Blue_Timer extends JPanel{
         @Override
         public void run() {
 
-
-                if (StartScreen.temp ==1)
-                {
-                    try {
-                        server.sendOutput(time+",");
-                    } catch (IOException e) {
-                        e.printStackTrace();
-                    }
-                }else
-                    {
+            while (true) {
+                if (StartScreen.temp == 1) {
+                    if (buton_pressed) {
                         try {
-
-                            String string = client.getinput().nextLine();
-                            String[]  a = string.split(",");
-                            time = Integer.parseInt(a[0]);
+                            System.out.println("server");
+                            server.sendOutput(""+time);
                         } catch (IOException e) {
                             e.printStackTrace();
                         }
                     }
+
+                } else  {
+
+                    try {
+                        System.out.println("client");
+
+
+                        String string = client.getinput().nextLine();
+                        time = Integer.parseInt(string);
+                        jLabel.setText("");
+                        minute = time / 60;
+                        seconds = time % 60;
+                        jLabel.append(minute + "-" + seconds);
+
+
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                }
+                try {
+                    Thread.sleep(1000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+
             }
+
+        }
 
 
     };
     Thread time1 = new Thread(runnable1);
-
 }
 
