@@ -1,5 +1,3 @@
-import com.sun.javaws.util.JfxHelper;
-
 import javax.swing.*;
 import java.awt.*;
 import java.util.ArrayList;

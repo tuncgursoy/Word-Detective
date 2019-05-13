@@ -15,7 +15,7 @@ public class Paint extends JPanel implements MouseMotionListener,MouseListener {
     private server server ;
     private client client;
     private int Port = 4566;
-   ;
+   //Blue_Timer blueTimer = new Blue_Timer();
 
 
     int[] tempx = new int[2];
@@ -31,6 +31,7 @@ public class Paint extends JPanel implements MouseMotionListener,MouseListener {
 
 
     public Paint() {
+
 
         Stringrectangles.add(new Rectangle(150, 90, 100, 80));
         Stringrectangles.add(new Rectangle(150 * 2, 90, 100, 80));
@@ -88,6 +89,7 @@ public class Paint extends JPanel implements MouseMotionListener,MouseListener {
         addMouseMotionListener(this);
         addMouseListener(this);
         setLayout(null);
+        //add(blueTimer);
         fitRectangle1.start();
 
 
@@ -181,7 +183,7 @@ public class Paint extends JPanel implements MouseMotionListener,MouseListener {
 
     @Override
     public void mouseDragged(MouseEvent e) {
-        if (StartScreen.temp == 1) {
+        if (StartScreen.temp == 0) {
 
 
             for (Rectangle cv : rectangles) {

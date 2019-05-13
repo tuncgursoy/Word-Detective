@@ -1,5 +1,7 @@
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.io.IOException;
 
 public class Blue_Timer extends JPanel{
@@ -22,11 +24,20 @@ public class Blue_Timer extends JPanel{
         jLabel.setBackground(Color.BLUE);
         jLabel.setFont(myfont);
         jLabel.setForeground(Color.white);
+        JButton jButton = new JButton("Start");
+        if (StartScreen.temp==1){}
+        add(jButton);
+        jButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+                time1.start();
+                t.start();
+                jButton.setVisible(false);
+                jButton.setEnabled(false);
+            }
+        });
         add(jLabel);
-
-        t.start();
-        time1.start();
-
         jLabel.setEditable(false);
 
         setVisible(true);
@@ -90,7 +101,7 @@ public class Blue_Timer extends JPanel{
                 if (StartScreen.temp ==1)
                 {
                     try {
-                        server.sendOutput(""+time+",");
+                        server.sendOutput(time+",");
                     } catch (IOException e) {
                         e.printStackTrace();
                     }
