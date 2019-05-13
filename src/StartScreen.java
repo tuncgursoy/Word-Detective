@@ -127,8 +127,9 @@ public class StartScreen extends JFrame
                      card = new Card();
                     setVisible(false);
                     temp++;
-                    new TalkScreen().setVisible(true);
-                    new GameScreen().setVisible(true);
+                    thread.start();
+
+
 
 
                 }else if (Client.isSelected())
@@ -136,7 +137,8 @@ public class StartScreen extends JFrame
                     card = new Card();
                     setVisible(false);
                     temp--;
-                    thread.start();
+                    new TalkScreen().setVisible(true);
+                    new GameScreen().setVisible(true);
 
                 }
                 else
