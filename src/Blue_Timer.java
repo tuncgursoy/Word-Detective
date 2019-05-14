@@ -105,7 +105,7 @@ public class Blue_Timer extends JPanel{
                 if (StartScreen.temp == 1) {
                     if (buton_pressed) {
                         try {
-                            System.out.println("server");
+
                             server.sendOutput(""+time);
                         } catch (IOException e) {
                             e.printStackTrace();
@@ -115,7 +115,7 @@ public class Blue_Timer extends JPanel{
                 } else  {
 
                     try {
-                        System.out.println("client");
+
 
 
                         String string = client.getinput().nextLine();

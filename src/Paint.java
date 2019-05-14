@@ -27,9 +27,6 @@ public class Paint extends JPanel implements MouseMotionListener,MouseListener {
     ArrayList<Rectangle> rectangles = new ArrayList<Rectangle>();
 
 
-
-Blue_Timer blueTimer = new Blue_Timer();
-
     public Paint() {
 
         Stringrectangles.add(new Rectangle(150, 90, 100, 80));
@@ -88,8 +85,13 @@ Blue_Timer blueTimer = new Blue_Timer();
         addMouseMotionListener(this);
         addMouseListener(this);
         setLayout(null);
+        Blue_Timer blueTimer = new Blue_Timer();
+        Red_Timer red_timer = new Red_Timer();
         blueTimer.setBounds(20,20,100,50);
+        red_timer.setBounds(880,20,100,50);
         add(blueTimer);
+        add(red_timer);
+
         fitRectangle1.start();
 
 
@@ -453,7 +455,7 @@ Blue_Timer blueTimer = new Blue_Timer();
                             } else if (rectangles.indexOf(b) < 12) {
                                 a1 = "pink";
                             } else if (rectangles.indexOf(b) < 24 && rectangles.indexOf(b) > 12) {
-                                a1 = "blue";
+                                    a1 = "blue";
                             }
                             Card.list.get(Stringrectangles.indexOf(a)).team = a1;
                         }
@@ -472,6 +474,7 @@ Blue_Timer blueTimer = new Blue_Timer();
     Runnable runnable4 = new Runnable() {
         @Override
         public void run() {
+
             boolean running = true;
             int lastscoreBlue = 0, lastScorePink = 0;
             while (running)

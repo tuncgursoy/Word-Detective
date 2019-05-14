@@ -1,23 +1,50 @@
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.io.IOException;
 
 public class Red_Timer extends JPanel
 {
+
+    private  JButton jButton;
     int time = 300;
     int minute,seconds;
     JTextArea jLabel ;
     boolean buton_pressed = false;
+    private server server;
+    private int Port = 5565;
+    private client client;
+
     Red_Timer()
     {
+        try {
+            StartServerorClient();
+        } catch (IOException | ClassNotFoundException e) {
+            e.printStackTrace();
+        }
         jLabel = new JTextArea();
         Font myfont = new Font("Times",Font.ITALIC,34);
         jLabel.setBackground(Color.red);
         jLabel.setFont(myfont);
         jLabel.setForeground(Color.white);
+        jButton = new JButton("Start");
+        if (StartScreen.temp==1) {
+            add(jButton);
+        }
+        time1.start();
+        jButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+
+                t.start();
+                jButton.setVisible(false);
+                jButton.setEnabled(false);
+                buton_pressed = true;
+            }
+        });
         add(jLabel);
-
-        t.start();
-
         jLabel.setEditable(false);
 
         setVisible(true);
@@ -54,4 +81,73 @@ public class Red_Timer extends JPanel
     };
     Thread t =new Thread(runnable);
 
+
+
+    void StartServerorClient() throws IOException, ClassNotFoundException {
+        if (StartScreen.temp==1)
+        {
+            Server();
+        }else
+        {
+            Client();
+        }
+    }
+    void  Server() throws IOException {
+        server = new server();
+        server.setServer(Port);
+
+    }
+    void Client() throws IOException {
+        client = new client();
+        client.setclient(TalkScreen.Ipaddr,Port);
+    }
+    Runnable runnable1 = new Runnable() {
+        @Override
+        public void run() {
+
+            while (true) {
+                if (StartScreen.temp == 1) {
+                    if (buton_pressed) {
+                        try {
+
+                            server.sendOutput(""+time);
+                        } catch (IOException e) {
+                            e.printStackTrace();
+                        }
+                    }
+
+                } else  {
+
+                    try {
+
+
+
+                        String string = client.getinput().nextLine();
+                        time = Integer.parseInt(string);
+                        jLabel.setText("");
+                        minute = time / 60;
+                        seconds = time % 60;
+                        jLabel.append(minute + "-" + seconds);
+
+
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                }
+                try {
+                    Thread.sleep(1000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+
+            }
+
+        }
+
+
+    };
+    Thread time1 = new Thread(runnable1);
 }
+
+
+
