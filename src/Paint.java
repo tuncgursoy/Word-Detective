@@ -13,6 +13,7 @@ public class Paint extends JPanel implements MouseMotionListener,MouseListener {
 
 
 
+
     int[] tempx = new int[2];
     int[] tempy = new int[2];
 
@@ -490,9 +491,14 @@ public class Paint extends JPanel implements MouseMotionListener,MouseListener {
                             String a1 = null;
                             if (Card.list.get(Stringrectangles.indexOf(a)).color.equalsIgnoreCase("black") && rectangles.indexOf(b) < 24 && rectangles.indexOf(b) > 12) {
                                 Score.isBlueWon = false;
+                                Score.isGameEnd = true;
+
                                 break;
                             } else if (Card.list.get(Stringrectangles.indexOf(a)).color.equalsIgnoreCase("black") && rectangles.indexOf(b) < 12) {
                                 Score.isBlueWon = true;
+                                Score.isGameEnd = true;
+
+
                                 break;
                             } else if (rectangles.indexOf(b) < 12) {
                                 a1 = "pink";
@@ -545,8 +551,6 @@ public class Paint extends JPanel implements MouseMotionListener,MouseListener {
         }
     };
     Thread Scorestart = new Thread(runnable4);
-
-
 
 
 

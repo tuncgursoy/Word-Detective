@@ -154,6 +154,16 @@ public class StartScreen extends JFrame
         ExitButton.setBounds(100,290,100,40);
         ExitButton.setBackground(VERY_LIGHT_YELLOW);
         jPanel.add(ExitButton);
+        JButton RulesButton = new JButton("Rules");
+        RulesButton.setBounds(100,245,100,40);
+        RulesButton.setBackground(VERY_LIGHT_YELLOW);
+        jPanel.add(RulesButton);
+        RulesButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                new RulesScreen().setVisible(true);
+            }
+        });
         ExitButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -162,7 +172,9 @@ public class StartScreen extends JFrame
             }
         });
         repaint();
+
     }
+
     Runnable run = new Runnable() {
         @Override
         public void run() {
