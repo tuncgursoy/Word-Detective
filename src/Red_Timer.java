@@ -7,7 +7,7 @@ import java.io.IOException;
 public class Red_Timer extends JPanel
 {
 
-    private  JButton jButton;
+      JButton jButton;
     int time = 300;
     int minute,seconds;
     JTextArea jLabel ;
@@ -15,6 +15,8 @@ public class Red_Timer extends JPanel
     private server server;
     private int Port = 5565;
     private client client;
+    boolean rTurn;
+     static int r = 0 ;
 
     Red_Timer()
     {
@@ -36,12 +38,17 @@ public class Red_Timer extends JPanel
         jButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
-
+                if (r == 0)
+                {
                 t.start();
-                jButton.setVisible(false);
-                jButton.setEnabled(false);
+                    jButton.setVisible(false);
+                    jButton.setEnabled(false);
+                r++;
+                }
+
                 buton_pressed = true;
+                rTurn = true;
+
             }
         });
         add(jLabel);
@@ -49,8 +56,9 @@ public class Red_Timer extends JPanel
 
         setVisible(true);
 
+//****************************************
 
-
+//------------------------------------------------
 
     }
     Runnable runnable = new Runnable() {
@@ -59,21 +67,31 @@ public class Red_Timer extends JPanel
             //jLabel.setText(time/60 +"-"+time%60);
             while (time != 0)
             {
+
                 if (buton_pressed) {
-                    jLabel.setText("");
-                    minute = time / 60;
-                    seconds = time % 60;
-                    jLabel.append(minute + "-" + seconds);
+                    if (rTurn) {
+
+                        jLabel.setText("");
+                        minute = time / 60;
+                        seconds = time % 60;
+                        jLabel.append(minute + "-" + seconds);
 
 
-                    time--;
-                    try {
-                        Thread.sleep(1000);
-                    } catch (InterruptedException e) {
-                        e.printStackTrace();
+                        time--;
+
+                        try {
+                            Thread.sleep(850);
+                        } catch (InterruptedException e) {
+                            e.printStackTrace();
+                        }
+                        repaint();
+
                     }
-                    repaint();
-
+                }
+                try {
+                    Thread.sleep(150);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
                 }
 
             }
@@ -122,6 +140,7 @@ public class Red_Timer extends JPanel
 
 
 
+
                         String string = client.getinput().nextLine();
                         time = Integer.parseInt(string);
                         jLabel.setText("");
@@ -135,11 +154,16 @@ public class Red_Timer extends JPanel
                     }
                 }
                 try {
-                    Thread.sleep(1000);
+                    Thread.sleep(850);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
 
+                try {
+                    Thread.sleep(150);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
             }
 
         }

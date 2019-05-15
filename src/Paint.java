@@ -1,21 +1,16 @@
-import jdk.nashorn.internal.ir.WhileNode;
-
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 import java.io.IOException;
-import java.io.StreamCorruptedException;
-import java.net.Inet4Address;
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.concurrent.ForkJoinPool;
 
 public class Paint extends JPanel implements MouseMotionListener,MouseListener {
 
     private server server ;
     private client client;
     private int Port = 4566;
-   ;
+   JButton jButton ;
+
 
 
     int[] tempx = new int[2];
@@ -87,8 +82,51 @@ public class Paint extends JPanel implements MouseMotionListener,MouseListener {
         setLayout(null);
         Blue_Timer blueTimer = new Blue_Timer();
         Red_Timer red_timer = new Red_Timer();
+        jButton = new JButton("CHANGE");
         blueTimer.setBounds(20,20,100,50);
         red_timer.setBounds(880,20,100,50);
+        jButton.setBounds(380,20,100,50);
+        jButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                if (blueTimer.BTurn)
+                {
+
+
+                    System.out.println("red");
+                   blueTimer.BTurn = false;
+                    blueTimer.buton_pressed = false;
+                    red_timer.buton_pressed = true;
+                    red_timer.rTurn = true;
+                    if (Red_Timer.r == 0) {
+                        red_timer.t.start();
+
+                        Red_Timer.r++;
+                    }
+                    red_timer.jButton.setVisible(false);
+                    red_timer.jButton.setEnabled(false);
+
+
+
+                }else if (red_timer.rTurn)
+                {
+
+                    System.out.println("blue");
+                    red_timer.rTurn = false;
+                    red_timer.buton_pressed = false;
+                    if (Blue_Timer.b==0){
+                    blueTimer.t.start();
+                    Blue_Timer.b++;
+                    }
+                    blueTimer.jButton.setVisible(false);
+                    blueTimer.setEnabled(false);
+                    blueTimer.BTurn =true;
+                    blueTimer.buton_pressed= true;
+
+
+                }
+            }
+        });
         add(blueTimer);
         add(red_timer);
 
@@ -104,6 +142,10 @@ public class Paint extends JPanel implements MouseMotionListener,MouseListener {
         }
         send.start();
         read.start();
+        if (StartScreen.temp == 1)
+        {
+            add(jButton);
+        }
         Scorekeep.start();
         Scorestart.start();
 
@@ -494,8 +536,6 @@ public class Paint extends JPanel implements MouseMotionListener,MouseListener {
                 lastscoreBlue = Score.BlueScore;
                 Score.pinkScore -= lastScorePink;
                 lastScorePink = Score.pinkScore;
-                System.out.println("Blue: "+Score.BlueScore);
-                System.out.println("Pink: "+Score.pinkScore);
                 try {
                     Thread.sleep(500);
                 } catch (InterruptedException e) {
