@@ -39,6 +39,13 @@ public class GameScreen extends JFrame
                         dispose();
                         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
                         break;
+                    }else if (Score.isdraw)
+                    {
+                        JOptionPane.showMessageDialog(null,"!!!!!!!!!DRAW!!!!!!!!!!!!!");
+                        dispose();
+                        setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+                        break;
+
                     }else
                     {
                         JOptionPane.showMessageDialog(null,"Pink win the game");

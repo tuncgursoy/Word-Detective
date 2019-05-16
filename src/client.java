@@ -1,7 +1,10 @@
-import java.io.*;
+import java.awt.*;
+import java.io.DataOutputStream;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.PrintWriter;
 import java.net.Socket;
 import java.util.ArrayList;
-import java.util.Base64;
 import java.util.Scanner;
 
  class client
@@ -48,7 +51,7 @@ import java.util.Scanner;
             String[] list1 = decoedString.split(",");
             int i = 0;
             String[] list2 = new String[25];
-            String[] temp1;
+            String[] temp1 = new String[0];
             for (String a : list1) {
                 list2[i] = a;
                 i++;
@@ -60,7 +63,12 @@ import java.util.Scanner;
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
-                temp1 = a.split("--");
+                try {
+                    temp1 = a.split("--");
+                }catch (AWTError error)
+                {
+
+                }
                 try {
                     temp.add(new Card1(temp1[0], temp1[1], temp1[2]));
                     Thread.sleep(300);

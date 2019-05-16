@@ -8,7 +8,7 @@ public class Blue_Timer extends JPanel {
     private int Port = 5555;
     private client client;
     private server server;
-    int time = 300;
+   static int btime = 300;
     int minute, seconds;
     JTextArea jLabel;
     JButton jButton;
@@ -64,16 +64,16 @@ public class Blue_Timer extends JPanel {
         @Override
         public void run() {
             //jLabel.setText(time/60 +"-"+time%60);
-            while (time != 0) {
+            while (btime != 0) {
                 if (buton_pressed) {
                     if(BTurn) {
                         jLabel.setText("");
-                        minute = time / 60;
-                        seconds = time % 60;
+                        minute = btime / 60;
+                        seconds = btime % 60;
                         jLabel.append(minute + "-" + seconds);
 
 
-                        time--;
+                        btime--;
 
 
                         try {
@@ -92,6 +92,14 @@ public class Blue_Timer extends JPanel {
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
+
+            }
+            if (Red_Timer.rtime == 0  )
+            {
+
+                    Score.isGameEnd = true;
+                    Score.gameEnd();
+
 
             }
         }
@@ -126,7 +134,7 @@ public class Blue_Timer extends JPanel {
                     if (buton_pressed) {
                         try {
 
-                            server.sendOutput("" + time);
+                            server.sendOutput("" + btime);
                         } catch (IOException e) {
                             e.printStackTrace();
                         }
@@ -140,10 +148,10 @@ public class Blue_Timer extends JPanel {
 
 
                             String string = client.getinput().nextLine();
-                            time = Integer.parseInt(string);
+                            btime = Integer.parseInt(string);
                             jLabel.setText("");
-                            minute = time / 60;
-                            seconds = time % 60;
+                            minute = btime / 60;
+                            seconds = btime % 60;
                             jLabel.append(minute + "-" + seconds);
 
 

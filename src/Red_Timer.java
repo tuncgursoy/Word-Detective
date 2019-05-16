@@ -8,14 +8,14 @@ public class Red_Timer extends JPanel
 {
 
       JButton jButton;
-    int time = 300;
+     static int rtime = 300;
     int minute,seconds;
     JTextArea jLabel ;
     boolean buton_pressed = false;
     private server server;
     private int Port = 5565;
     private client client;
-    boolean rTurn;
+     boolean rTurn;
      static int r = 0 ;
 
     Red_Timer()
@@ -31,9 +31,7 @@ public class Red_Timer extends JPanel
         jLabel.setFont(myfont);
         jLabel.setForeground(Color.white);
         jButton = new JButton("Start");
-        if (StartScreen.temp==1) {
-            add(jButton);
-        }
+
         time1.start();
         jButton.addActionListener(new ActionListener() {
             @Override
@@ -65,19 +63,18 @@ public class Red_Timer extends JPanel
         @Override
         public void run() {
             //jLabel.setText(time/60 +"-"+time%60);
-            while (time != 0)
-            {
+            while (rtime != 0) {
 
                 if (buton_pressed) {
                     if (rTurn) {
 
                         jLabel.setText("");
-                        minute = time / 60;
-                        seconds = time % 60;
+                        minute = rtime / 60;
+                        seconds = rtime % 60;
                         jLabel.append(minute + "-" + seconds);
 
 
-                        time--;
+                        rtime--;
 
                         try {
                             Thread.sleep(850);
@@ -88,13 +85,21 @@ public class Red_Timer extends JPanel
 
                     }
                 }
+
+
                 try {
                     Thread.sleep(150);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
+            }
+            if (Blue_Timer.btime == 0)
+            {
+                Score.isGameEnd = true;
+                Score.gameEnd();
 
             }
+
         }
     };
     Thread t =new Thread(runnable);
@@ -128,7 +133,7 @@ public class Red_Timer extends JPanel
                     if (buton_pressed) {
                         try {
 
-                            server.sendOutput(""+time);
+                            server.sendOutput(""+rtime);
                         } catch (IOException e) {
                             e.printStackTrace();
                         }
@@ -142,10 +147,10 @@ public class Red_Timer extends JPanel
 
 
                         String string = client.getinput().nextLine();
-                        time = Integer.parseInt(string);
+                        rtime = Integer.parseInt(string);
                         jLabel.setText("");
-                        minute = time / 60;
-                        seconds = time % 60;
+                        minute = rtime / 60;
+                        seconds = rtime % 60;
                         jLabel.append(minute + "-" + seconds);
 
 

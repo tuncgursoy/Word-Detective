@@ -3,9 +3,10 @@ class Score
    static int BlueScore = 0;
     static int pinkScore = 0 ;
     static boolean isBlueWon ;
+    static boolean isdraw;
     static boolean isGameEnd = false;
 
-    void gameEnd()
+    static void gameEnd()
     {
         if (isGameEnd)
         {
@@ -16,6 +17,10 @@ class Score
             }if (BlueScore<pinkScore)
             {
                 isBlueWon = false;
+            }
+            if (BlueScore == pinkScore)
+            {
+                isdraw = true;
             }
         }
     }

@@ -10,6 +10,7 @@ public class Paint extends JPanel implements MouseMotionListener,MouseListener {
     private client client;
     private int Port = 4566;
    JButton jButton ;
+    Image background = Toolkit.getDefaultToolkit().createImage("e57409f822cfaf4c5141e151c6d7e9ae.jpg");
 
 
 
@@ -25,6 +26,8 @@ public class Paint extends JPanel implements MouseMotionListener,MouseListener {
 
     public Paint() {
 
+
+        setBackground(Color.gray);
         Stringrectangles.add(new Rectangle(150, 90, 100, 80));
         Stringrectangles.add(new Rectangle(150 * 2, 90, 100, 80));
         Stringrectangles.add(new Rectangle(150 * 3, 90, 100, 80));
@@ -36,8 +39,8 @@ public class Paint extends JPanel implements MouseMotionListener,MouseListener {
         Stringrectangles.add(new Rectangle(150 * 4, 90 * 2, 100, 80));
         Stringrectangles.add(new Rectangle(150 * 5, 90 * 2, 100, 80));
         Stringrectangles.add(new Rectangle(150, 90 * 3, 100, 80));
-        Stringrectangles.add(new Rectangle(150 * 2, 90 * 3, 100, 80));
-        Stringrectangles.add(new Rectangle(150 * 3, 90 * 3, 100, 80));
+        Stringrectangles.add(new Rectangle(150 * 2, 90 * 3, 100, 80));//11
+        Stringrectangles.add(new Rectangle(150 * 3, 90 * 3, 100, 80));//12
         Stringrectangles.add(new Rectangle(150 * 4, 90 * 3, 100, 80));
         Stringrectangles.add(new Rectangle(150 * 5, 90 * 3, 100, 80));
         Stringrectangles.add(new Rectangle(150, 90 * 4, 100, 80));
@@ -46,8 +49,8 @@ public class Paint extends JPanel implements MouseMotionListener,MouseListener {
         Stringrectangles.add(new Rectangle(150 * 4, 90 * 4, 100, 80));
         Stringrectangles.add(new Rectangle(150 * 5, 90 * 4, 100, 80));
         Stringrectangles.add(new Rectangle(150, 90 * 5, 100, 80));
-        Stringrectangles.add(new Rectangle(150 * 2, 90 * 5, 100, 80));
-        Stringrectangles.add(new Rectangle(150 * 3, 90 * 5, 100, 80));
+        Stringrectangles.add(new Rectangle(150 * 2, 90 * 5, 100, 80));//21
+        Stringrectangles.add(new Rectangle(150 * 3, 90 * 5, 100, 80));//22
         Stringrectangles.add(new Rectangle(150 * 4, 90 * 5, 100, 80));
         Stringrectangles.add(new Rectangle(150 * 5, 90 * 5, 100, 80));
 
@@ -81,12 +84,14 @@ public class Paint extends JPanel implements MouseMotionListener,MouseListener {
         addMouseMotionListener(this);
         addMouseListener(this);
         setLayout(null);
+        setBackground(Color.WHITE);
+        sound.start();
         Blue_Timer blueTimer = new Blue_Timer();
         Red_Timer red_timer = new Red_Timer();
         jButton = new JButton("CHANGE");
-        blueTimer.setBounds(20,20,100,50);
-        red_timer.setBounds(880,20,100,50);
-        jButton.setBounds(380,20,100,50);
+        blueTimer.setBounds(20,20,70,40);
+        red_timer.setBounds(880,20,70,40);
+        jButton.setBounds(450,20,100,50);
         jButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -131,6 +136,7 @@ public class Paint extends JPanel implements MouseMotionListener,MouseListener {
         add(blueTimer);
         add(red_timer);
 
+
         fitRectangle1.start();
 
 
@@ -151,13 +157,17 @@ public class Paint extends JPanel implements MouseMotionListener,MouseListener {
         Scorestart.start();
 
 
+        repaint();
+
     }
 
+    Color color = new Color(63,59,59);
     @Override
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
 
 
+        g.drawImage(background,0,0,null);
         for (int a = 0; a < 12; a++) {
             g.setColor(Color.pink);
             g.fillRect(rectangles.get(a).x, rectangles.get(a).y, rectangles.get(a).width, rectangles.get(a).height);
@@ -169,8 +179,9 @@ public class Paint extends JPanel implements MouseMotionListener,MouseListener {
         }
         for (int r = 0; r < Stringrectangles.size(); r++) {
 
-            g.setColor(Color.BLACK);
+            g.setColor(Color.gray);
             g.drawRect(Stringrectangles.get(r).x, Stringrectangles.get(r).y, Stringrectangles.get(r).width, Stringrectangles.get(r).height);
+            g.setColor(Color.white);
             g.drawString(Card.list.get(r).CardString, Stringrectangles.get(r).x + Stringrectangles.get(r).width / 2 - 10, Stringrectangles.get(r).y + Stringrectangles.get(r).height / 2);
             StartScreen.card.rectangles = Stringrectangles;
 
@@ -264,6 +275,7 @@ public class Paint extends JPanel implements MouseMotionListener,MouseListener {
 
             while (flag) {
                 if (StartScreen.temp == 1) {
+                    repaint();
                     while (flag) {
                         try {
 
@@ -553,8 +565,30 @@ public class Paint extends JPanel implements MouseMotionListener,MouseListener {
     Thread Scorestart = new Thread(runnable4);
 
 
+Runnable runnable6 = new Runnable() {
+    @Override
+    public void run() {
+
+        while (true)
+        {
+            try {
+                Thread.sleep(8500);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            Sound.music();
 
 
+            try {
+                Thread.sleep(2500);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+};
+
+Thread sound = new Thread(runnable6);
 
 }
 
