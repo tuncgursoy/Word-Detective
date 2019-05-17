@@ -1,16 +1,14 @@
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.io.IOException;
 
-public class Blue_Timer extends JPanel {
+class Blue_Timer extends JPanel {
     private int Port = 5555;
     private client client;
     private server server;
    static int btime = 300;
-    int minute, seconds;
-    JTextArea jLabel;
+    private int minute, seconds;
+    private JTextArea jLabel;
     JButton jButton;
     static int b = 0 ;
     boolean buton_pressed = false;
@@ -20,7 +18,7 @@ public class Blue_Timer extends JPanel {
     Blue_Timer() {
         try {
             StartServerorClient();
-        } catch (IOException | ClassNotFoundException e) {
+        } catch (IOException e) {
             e.printStackTrace();
         }
         jLabel = new JTextArea();
@@ -32,24 +30,66 @@ public class Blue_Timer extends JPanel {
         if (StartScreen.temp == 1) {
             add(jButton);
         }
+        Runnable runnable1 = () -> {
+
+            while (true) {
+                if (StartScreen.temp == 1) {
+                    if (buton_pressed) {
+                        try {
+
+                            server.sendOutput("" + btime);
+                        } catch (IOException e) {
+                            e.printStackTrace();
+                        }
+                    }
+
+                } else {
+
+                    try {
+
+
+                        String string = client.getinput().nextLine();
+                        btime = Integer.parseInt(string);
+                        jLabel.setText("");
+                        minute = btime / 60;
+                        seconds = btime % 60;
+                        jLabel.append(minute + "-" + seconds);
+
+
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                }
+                try {
+                    Thread.sleep(850);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+
+                try {
+                    Thread.sleep(150);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+
+        };
+        Thread time1 = new Thread(runnable1);
         time1.start();
 
-        jButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
+        jButton.addActionListener(e -> {
 
 
 
-                if (b== 0)
-                {
-                t.start();
-                b++;
-            }
-                jButton.setVisible(false);
-                jButton.setEnabled(false);
-                buton_pressed = true;
-                BTurn = true;
-            }
+            if (b== 0)
+            {
+            t.start();
+            b++;
+        }
+            jButton.setVisible(false);
+            jButton.setEnabled(false);
+            buton_pressed = true;
+            BTurn = true;
         });
         add(jLabel);
 
@@ -60,7 +100,7 @@ public class Blue_Timer extends JPanel {
 
     }
 
-    Runnable runnable = new Runnable() {
+    private Runnable runnable = new Runnable() {
         @Override
         public void run() {
             //jLabel.setText(time/60 +"-"+time%60);
@@ -106,7 +146,7 @@ public class Blue_Timer extends JPanel {
     };
     Thread t = new Thread(runnable);
 
-    void StartServerorClient() throws IOException, ClassNotFoundException {
+    private void StartServerorClient() throws IOException {
         if (StartScreen.temp == 1) {
             Server();
         } else {
@@ -114,69 +154,16 @@ public class Blue_Timer extends JPanel {
         }
     }
 
-    void Server() throws IOException {
+    private void Server() throws IOException {
         server = new server();
         server.setServer(Port);
 
     }
 
-    void Client() throws IOException {
+    private void Client() throws IOException {
         client = new client();
         client.setclient(TalkScreen.Ipaddr, Port);
     }
-
-    Runnable runnable1 = new Runnable() {
-        @Override
-        public void run() {
-
-            while (true) {
-                if (StartScreen.temp == 1) {
-                    if (buton_pressed) {
-                        try {
-
-                            server.sendOutput("" + btime);
-                        } catch (IOException e) {
-                            e.printStackTrace();
-                        }
-                    }
-
-                } else {
-
-                    try {
-
-
-
-
-                            String string = client.getinput().nextLine();
-                            btime = Integer.parseInt(string);
-                            jLabel.setText("");
-                            minute = btime / 60;
-                            seconds = btime % 60;
-                            jLabel.append(minute + "-" + seconds);
-
-
-                    } catch (IOException e) {
-                        e.printStackTrace();
-                    }
-                }
-                try {
-                    Thread.sleep(850);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-
-                try {
-                    Thread.sleep(150);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-            }
-
-        }
-
-
-    };
-    Thread time1 = new Thread(runnable1);
 
 }
 

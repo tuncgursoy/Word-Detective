@@ -1,32 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="Word-Detective:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="887b8ef5-27d1-4642-8232-1e640ed1c2b3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Fairy Tail Theme (Violin Cover) .mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/e57409f822cfaf4c5141e151c6d7e9ae.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Sound.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/Word_Detective_jar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Word-Detective.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Word-Detective.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Word-Detective/Blue_Timer$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Word-Detective/Blue_Timer$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Word-Detective/Blue_Timer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Word-Detective/Blue_Timer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Word-Detective/CardWords.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Word-Detective/Card.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Word-Detective/Card.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Word-Detective/Card1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Word-Detective/Card1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Word-Detective/Dictionary.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Word-Detective/Dictionary.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Word-Detective/GameScreen.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Word-Detective/GameScreen.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Word-Detective/Paint$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Word-Detective/Paint$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Word-Detective/Paint.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Word-Detective/Paint.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Word-Detective/Red_Timer$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Word-Detective/Red_Timer$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Word-Detective/Red_Timer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Word-Detective/Red_Timer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Word-Detective/StartScreen$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Word-Detective/StartScreen$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Word-Detective/StartScreen$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Word-Detective/StartScreen$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Word-Detective/StartScreen$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Word-Detective/StartScreen$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Word-Detective/StartScreen$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Word-Detective/StartScreen$4.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Word-Detective/StartScreen.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Word-Detective/StartScreen.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Word-Detective/TalkScreen$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Word-Detective/TalkScreen$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Word-Detective/TalkScreen$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Word-Detective/TalkScreen.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Word-Detective/TalkScreen.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Word-Detective/client.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Word-Detective/client.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Word-Detective/wordDetective.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Word-Detective/server.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Word-Detective/server.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Blue_Timer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Blue_Timer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CardWords.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Card.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Card1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Card1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Dictionary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dictionary.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GameScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameScreen.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Paint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Paint.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Red_Timer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Red_Timer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Score.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Score.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Rules.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Rules.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RulesScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RulesScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sound.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sound.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StartScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StartScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Table.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Table.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TableScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TableScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TalkScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TalkScreen.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/wordDetective.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -46,8 +65,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Paint.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="415">
-              <caret line="159" column="16" selection-start-line="159" selection-start-column="16" selection-end-line="159" selection-end-column="16" />
+            <state relative-caret-position="231">
+              <caret line="399" column="42" selection-start-line="399" selection-start-column="42" selection-end-line="399" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -55,31 +74,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/e57409f822cfaf4c5141e151c6d7e9ae.jpg">
-          <provider selected="true" editor-type-id="images" />
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Score.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="37" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
+            <state>
+              <caret column="13" selection-start-column="13" selection-end-column="13" />
               <folding>
                 <element signature="e#68#69#0" expanded="true" />
                 <element signature="e#118#119#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/client.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="895">
-              <caret line="53" column="42" selection-start-line="53" selection-start-column="42" selection-end-line="53" selection-end-column="42" />
-              <folding>
-                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -99,19 +110,40 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/TalkScreen.java">
+        <entry file="file://$PROJECT_DIR$/src/TableScreen.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-267">
-              <caret line="39" column="50" selection-start-line="39" selection-start-column="50" selection-end-line="39" selection-end-column="50" />
+            <state relative-caret-position="204">
+              <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/TableScreen.java">
+        <entry file="file://$PROJECT_DIR$/src/Card1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="14" selection-end-column="15" />
+            <state relative-caret-position="561">
+              <caret line="33" selection-start-line="33" selection-end-line="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/TalkScreen.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1683">
+              <caret line="102" column="99" selection-start-line="102" selection-start-column="99" selection-end-line="102" selection-end-column="99" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/GameScreen.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -122,8 +154,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Table.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="43" />
+            <state relative-caret-position="51">
+              <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -132,13 +164,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/GameScreen.java">
+        <entry file="file://$PROJECT_DIR$/src/Red_Timer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="731">
-              <caret line="43" column="86" selection-start-line="43" selection-start-column="86" selection-end-line="43" selection-end-column="86" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="17">
+              <caret line="30" column="39" selection-start-line="30" selection-start-column="39" selection-end-line="30" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -154,9 +183,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Sele</find>
-      <find>Selec</find>
-      <find>button</find>
       <find>while</find>
       <find>jPanel</find>
       <find>port</find>
@@ -183,7 +209,10 @@
       <find>sou</find>
       <find>jbut</find>
       <find>j</find>
+      <find>jbutton</find>
+      <find>enter</find>
       <find>repaint</find>
+      <find>isGame</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -192,8 +221,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Deneme5/main.java" />
-        <option value="$PROJECT_DIR$/src/Deneme5/StarterScreen.java" />
         <option value="$PROJECT_DIR$/src/Gereksiz/as.java" />
         <option value="$PROJECT_DIR$/src/deneme2/server.java" />
         <option value="$PROJECT_DIR$/src/deneme2/CanvasFormClient.java" />
@@ -220,29 +247,31 @@
         <option value="$PROJECT_DIR$/src/deneme2/Main_Server.java" />
         <option value="$PROJECT_DIR$/src/Base64.java" />
         <option value="$PROJECT_DIR$/src/ServerPaint.java" />
-        <option value="$PROJECT_DIR$/src/server.java" />
         <option value="$PROJECT_DIR$/src/main2.java" />
         <option value="$PROJECT_DIR$/src/KeyListener.java" />
-        <option value="$PROJECT_DIR$/src/Dictionary.java" />
-        <option value="$PROJECT_DIR$/src/Card1.java" />
-        <option value="$PROJECT_DIR$/src/Table.java" />
         <option value="$PROJECT_DIR$/src/Timer.java" />
         <option value="$PROJECT_DIR$/src/wordDetective.java" />
         <option value="$PROJECT_DIR$/src/CardWords.java" />
-        <option value="$PROJECT_DIR$/src/Card.java" />
         <option value="$PROJECT_DIR$/src/main1.java" />
-        <option value="$PROJECT_DIR$/src/TableScreen.java" />
+        <option value="$PROJECT_DIR$/src/Score.java" />
+        <option value="$PROJECT_DIR$/src/GenericRoundedButton.java" />
+        <option value="$PROJECT_DIR$/src/RoundedBorder.java" />
+        <option value="$PROJECT_DIR$/src/Blue_Timer.java" />
+        <option value="$PROJECT_DIR$/src/Red_Timer.java" />
+        <option value="$PROJECT_DIR$/src/Card.java" />
+        <option value="$PROJECT_DIR$/src/Card1.java" />
+        <option value="$PROJECT_DIR$/src/client.java" />
+        <option value="$PROJECT_DIR$/src/Dictionary.java" />
         <option value="$PROJECT_DIR$/src/Rules.java" />
         <option value="$PROJECT_DIR$/src/RulesScreen.java" />
-        <option value="$PROJECT_DIR$/src/StartScreen.java" />
+        <option value="$PROJECT_DIR$/src/server.java" />
         <option value="$PROJECT_DIR$/src/Sound.java" />
-        <option value="$PROJECT_DIR$/src/Red_Timer.java" />
-        <option value="$PROJECT_DIR$/src/Blue_Timer.java" />
-        <option value="$PROJECT_DIR$/src/Score.java" />
-        <option value="$PROJECT_DIR$/src/GameScreen.java" />
+        <option value="$PROJECT_DIR$/src/StartScreen.java" />
+        <option value="$PROJECT_DIR$/src/Table.java" />
         <option value="$PROJECT_DIR$/src/TalkScreen.java" />
-        <option value="$PROJECT_DIR$/src/client.java" />
+        <option value="$PROJECT_DIR$/src/TableScreen.java" />
         <option value="$PROJECT_DIR$/src/Paint.java" />
+        <option value="$PROJECT_DIR$/src/GameScreen.java" />
       </list>
     </option>
   </component>
@@ -253,9 +282,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="952" />
-    <option name="width" value="977" />
-    <option name="height" value="1038" />
+    <option name="x" value="334" />
+    <option name="y" value="129" />
+    <option name="width" value="784" />
+    <option name="height" value="879" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -263,8 +293,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -281,14 +309,20 @@
               <item name="Word-Detective1" type="b2602c69:ProjectViewProjectNode" />
               <item name="Word-Detective1" type="462c0819:PsiDirectoryNode" />
               <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="production" type="462c0819:PsiDirectoryNode" />
+              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Word-Detective1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Word-Detective1" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
+              <item name="Word_Detective_jar" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Word-Detective1" type="b2602c69:ProjectViewProjectNode" />
               <item name="Word-Detective1" type="462c0819:PsiDirectoryNode" />
               <item name="out" type="462c0819:PsiDirectoryNode" />
               <item name="production" type="462c0819:PsiDirectoryNode" />
-              <item name="Word-Detective" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Word-Detective1" type="b2602c69:ProjectViewProjectNode" />
@@ -308,9 +342,15 @@
         </subPane>
       </pane>
       <pane id="Course" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="GenerateAntBuildDialog.backupFiles" value="true" />
+    <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
+    <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
+    <property name="GenerateAntBuildDialog.outputFileNameProperty" value="word-detective1" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.SHOW" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -509,7 +549,10 @@
       <workItem from="1557949773545" duration="2294000" />
       <workItem from="1557954613590" duration="1461000" />
       <workItem from="1557988224945" duration="2585000" />
-      <workItem from="1558012396580" duration="10468000" />
+      <workItem from="1558012396580" duration="11328000" />
+      <workItem from="1558023837253" duration="368000" />
+      <workItem from="1558033494173" duration="1285000" />
+      <workItem from="1558074824335" duration="5603000" />
     </task>
     <task id="LOCAL-00001" summary="Prime15550 second update">
       <created>1556373001388</created>
@@ -644,11 +687,18 @@
       <option name="project" value="LOCAL" />
       <updated>1557950111429</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Prime15550 Update  16.05.2019&#10;&#10;Finished">
+      <created>1558022947394</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1558022947394</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="203961000" />
+    <option name="totallyTimeSpent" value="212077000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -660,9 +710,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-8" y="32" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49551168" visible="true" weight="0.22080536" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49551168" visible="true" weight="0.18123667" />
       <window_info id="Structure" order="1" sideWeight="0.50448835" side_tool="true" weight="0.19060403" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -673,7 +724,7 @@
       <window_info anchor="bottom" id="Duplicate detector" order="0" weight="0.3286119" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.32761088" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.4986577" visible="true" weight="0.14872521" />
+      <window_info active="true" anchor="bottom" id="Run" order="3" sideWeight="0.4986577" visible="true" weight="0.10725894" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.39943343" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -690,7 +741,7 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Maven" order="5" weight="0.3295302" />
+      <window_info anchor="right" id="Maven" order="5" weight="0.32942432" />
       <window_info anchor="right" id="Database" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
@@ -791,7 +842,8 @@
     <MESSAGE value="Prime15550 Update  4.05.2019&#10;&#10;Blue Timer&#10;Red Timer added" />
     <MESSAGE value="Prime15550 Update  15.05.2019&#10;&#10;Change Button added" />
     <MESSAGE value="Prime15550 Update  15.05.2019" />
-    <option name="LAST_COMMIT_MESSAGE" value="Prime15550 Update  15.05.2019" />
+    <MESSAGE value="Prime15550 Update  16.05.2019&#10;&#10;Finished" />
+    <option name="LAST_COMMIT_MESSAGE" value="Prime15550 Update  16.05.2019&#10;&#10;Finished" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -810,7 +862,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/server.java</url>
-          <line>41</line>
+          <line>40</line>
           <properties />
           <option name="timeStamp" value="9" />
         </line-breakpoint>
@@ -818,13 +870,7 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk-11.0.1/lib/src.zip!/java.base/java/lang/Throwable.java" />
-    <entry file="jar://C:/Program Files/Java/jdk-11.0.1/lib/src.zip!/java.base/java/util/Scanner.java" />
-    <entry file="file://$PROJECT_DIR$/src/ServerPaint.java" />
     <entry file="jar://C:/Program Files/Java/jdk-11.0.1/lib/src.zip!/java.desktop/java/awt/EventDispatchThread.java" />
-    <entry file="file://$PROJECT_DIR$/.classpath">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -928,13 +974,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/wordDetective.java" />
     <entry file="file://$PROJECT_DIR$/src/CardWords.java" />
-    <entry file="file://$PROJECT_DIR$/src/Card1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-231">
-          <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/out/production/Word-Detective/Paint.class">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -944,23 +983,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/KeyListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.jql" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/Learning">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Dictionary.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3553">
-          <caret line="211" selection-start-line="211" selection-end-line="211" />
-        </state>
-      </provider>
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_151/src.zip!/java/awt/Window.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -973,10 +998,73 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Card.java">
+    <entry file="file://$PROJECT_DIR$/zoltan-tasi-732271-unsplash.jpg" />
+    <entry file="file://$PROJECT_DIR$/5a3d484b8b82891a26531fc8fd78f6bf-700.jpg" />
+    <entry file="file://$PROJECT_DIR$/863968.png" />
+    <entry file="file://$PROJECT_DIR$/950882.png" />
+    <entry file="file://$PROJECT_DIR$/dn2-vic-03b-900x630.jpg" />
+    <entry file="file://$PROJECT_DIR$/Old_dark_blue_Wall_Mural_Wallpaper_a_800x.jpg" />
+    <entry file="file://$PROJECT_DIR$/e57409f822cfaf4c5141e151c6d7e9ae.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/META-INF/MANIFEST.MF">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GenericRoundedButton.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="144">
+          <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#98#99#0" expanded="true" />
+            <element signature="e#125#126#0" expanded="true" />
+            <element signature="e#162#163#0" expanded="true" />
+            <element signature="e#185#186#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Blue_Timer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Rules.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="17" selection-start-column="17" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.classpath">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Sound.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/StartScreen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="152" column="46" selection-start-line="152" selection-start-column="46" selection-end-line="152" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/server.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -985,86 +1073,101 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/RulesScreen.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/zoltan-tasi-732271-unsplash.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/StartScreen.java">
+    <entry file="file://$PROJECT_DIR$/src/KeyListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="542">
-          <caret line="185" column="9" selection-start-line="179" selection-start-column="26" selection-end-line="185" selection-end-column="9" />
+        <state relative-caret-position="34">
+          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Sound.java">
+    <entry file="file://$PROJECT_DIR$/src/client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="564">
+          <caret line="82" column="56" selection-start-line="82" selection-start-column="56" selection-end-line="82" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Card.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Dictionary.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
+          <caret line="22" column="11" lean-forward="true" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#180#188#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Rules.java">
+    <entry file="file://$PROJECT_DIR$/src/RoundedBorder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/server.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="47" selection-start-line="47" selection-end-line="47" />
+        <state relative-caret-position="68">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Blue_Timer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="98" selection-start-line="98" selection-end-line="98" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Red_Timer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="94">
-          <caret line="95" column="11" lean-forward="true" selection-start-line="95" selection-start-column="11" selection-end-line="100" selection-end-column="13" />
+        <state relative-caret-position="17">
+          <caret line="30" column="39" selection-start-line="30" selection-start-column="39" selection-end-line="30" selection-end-column="39" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Score.java">
+    <entry file="file://$PROJECT_DIR$/src/main2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="26" lean-forward="true" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GameScreen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="43" column="86" selection-start-line="43" selection-start-column="86" selection-end-line="43" selection-end-column="86" />
+        <state>
+          <caret column="13" selection-start-column="13" selection-end-column="13" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#68#69#0" expanded="true" />
+            <element signature="e#118#119#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/TalkScreen.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-267">
-          <caret line="39" column="50" selection-start-line="39" selection-start-column="50" selection-end-line="39" selection-end-column="50" />
+        <state relative-caret-position="1683">
+          <caret line="102" column="99" selection-start-line="102" selection-start-column="99" selection-end-line="102" selection-end-column="99" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Card1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TableScreen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1079,74 +1182,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/TableScreen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="14" selection-end-column="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Table.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="43" />
+        <state relative-caret-position="51">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="895">
-          <caret line="53" column="42" selection-start-line="53" selection-start-column="42" selection-end-line="53" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="37" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
-          <folding>
-            <element signature="e#68#69#0" expanded="true" />
-            <element signature="e#118#119#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/5a3d484b8b82891a26531fc8fd78f6bf-700.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/863968.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/950882.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dn2-vic-03b-900x630.jpg">
-      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Paint.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
-          <caret line="159" column="16" selection-start-line="159" selection-start-column="16" selection-end-line="159" selection-end-column="16" />
+        <state relative-caret-position="231">
+          <caret line="399" column="42" selection-start-line="399" selection-start-column="42" selection-end-line="399" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Old_dark_blue_Wall_Mural_Wallpaper_a_800x.jpg">
-      <provider selected="true" editor-type-id="images" />
+    <entry file="file://$PROJECT_DIR$/src/Score.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+        </state>
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/e57409f822cfaf4c5141e151c6d7e9ae.jpg">
-      <provider selected="true" editor-type-id="images" />
+    <entry file="file://$PROJECT_DIR$/src/GameScreen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
   </component>
   <component name="masterDetails">
@@ -1154,11 +1225,12 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
-          <last-edited>unnamed</last-edited>
+          <last-edited>Word-Detective:jar</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>

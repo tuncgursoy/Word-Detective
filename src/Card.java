@@ -1,12 +1,12 @@
 import java.awt.*;
 import java.util.ArrayList;
 
-public class Card {
+class Card {
 
           static ArrayList<Card1> list;
 
       ArrayList<Rectangle> rectangles = new ArrayList<>();
-    public  Card ()
+    Card()
     {
         list= new ArrayList();
         for (int i =0 ; i<25;i++) {

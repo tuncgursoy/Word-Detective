@@ -1,7 +1,5 @@
-import javax.swing.*;
 import java.awt.*;
 import java.util.ArrayList;
-import java.util.concurrent.RecursiveAction;
 
 public class Table extends Canvas
 {
@@ -29,7 +27,7 @@ public class Table extends Canvas
         }
     }
 
-    public Table()
+     Table()
     {
 
 

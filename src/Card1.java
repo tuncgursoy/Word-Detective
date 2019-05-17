@@ -1,12 +1,9 @@
-import java.awt.*;
-
-public class Card1 {
-    String color = "", team = "",CardString;
-    Rectangle rectangle;
-    static public int  pinkcount= 0;
-    static public int blueCount = 0 ;
-    static public int blackcount = 0 ;
-    Dictionary dictionary = new Dictionary();
+class Card1 {
+    String color = "", team,CardString;
+    private static int  pinkcount= 0;
+    private static int blueCount = 0 ;
+    private static int blackcount = 0 ;
+    private Dictionary dictionary = new Dictionary();
     Card1()
     {
 
@@ -38,7 +35,7 @@ public class Card1 {
 
 
     }
-    public Card1(String stringname, String Color, String team) {
+    Card1(String stringname, String Color, String team) {
         this.CardString = stringname;
         this.color = Color;
         this.team = team;

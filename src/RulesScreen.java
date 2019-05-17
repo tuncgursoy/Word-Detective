@@ -1,7 +1,7 @@
 import javax.swing.*;
 import java.awt.*;
 
-public class RulesScreen extends JFrame
+class RulesScreen extends JFrame
 {
     RulesScreen()
     {

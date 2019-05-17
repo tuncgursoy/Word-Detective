@@ -1,7 +1,7 @@
 import javax.swing.*;
 import java.awt.*;
 
-public class GameScreen extends JFrame
+class GameScreen extends JFrame
 {
 
 
@@ -12,6 +12,8 @@ public class GameScreen extends JFrame
         setVisible(false);
         setBackground(Color.gray);
         setResizable(false);
+
+        setLocation(0,40);
 
         setSize(1000,700);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -26,47 +28,44 @@ public class GameScreen extends JFrame
 
 
     }
-    Runnable runnable5 = new Runnable() {
-        @Override
-        public void run() {
-            while (true)
+    private Runnable runnable5 = () -> {
+        while (true)
+        {
+            if (Score.isGameEnd)
             {
-                if (Score.isGameEnd)
+                if (Score.isBlueWon)
                 {
-                    if (Score.isBlueWon)
-                    {
-                        JOptionPane.showMessageDialog(null,"Blue Won the game");
-                        dispose();
-                        setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-                        break;
-                    }else if (Score.isdraw)
-                    {
-                        JOptionPane.showMessageDialog(null,"!!!!!!!!!DRAW!!!!!!!!!!!!!");
-                        dispose();
-                        setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-                        break;
+                    JOptionPane.showMessageDialog(null,"Blue Won the game");
+                    dispose();
+                    setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+                    break;
+                }else if (Score.isdraw)
+                {
+                    JOptionPane.showMessageDialog(null,"!!!!!!!!!DRAW!!!!!!!!!!!!!");
+                    dispose();
+                    setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+                    break;
 
-                    }else
-                    {
-                        JOptionPane.showMessageDialog(null,"Pink win the game");
-                        dispose();
-                        setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-                        break;
+                }else
+                {
+                    JOptionPane.showMessageDialog(null,"Pink win the game");
+                    dispose();
+                    setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+                    break;
 
-                    }
-                }
-
-
-                try {
-                    Thread.sleep(1000);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
                 }
             }
 
-        }
+
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+    }
+
     };
-    Thread thread = new Thread(runnable5);
+    private Thread thread = new Thread(runnable5);
 
 
 

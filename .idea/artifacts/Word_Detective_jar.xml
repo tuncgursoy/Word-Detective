@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Word-Detective:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Word_Detective_jar</output-path>
+    <root id="archive" name="Word-Detective.jar">
+      <element id="module-output" name="Word-Detective" />
+      <element id="extracted-dir" path="$USER_HOME$/Desktop/jl1.0.1.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

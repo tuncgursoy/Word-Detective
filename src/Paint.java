@@ -9,22 +9,22 @@ public class Paint extends JPanel implements MouseMotionListener,MouseListener {
     private server server ;
     private client client;
     private int Port = 4566;
-   JButton jButton ;
-    Image background = Toolkit.getDefaultToolkit().createImage("e57409f822cfaf4c5141e151c6d7e9ae.jpg");
+   private JButton jButton ;
+    private Image background = Toolkit.getDefaultToolkit().createImage("e57409f822cfaf4c5141e151c6d7e9ae.jpg");
 
 
 
 
-    int[] tempx = new int[2];
-    int[] tempy = new int[2];
+    private int[] tempx = new int[2];
+    private int[] tempy = new int[2];
 
 
-    ArrayList<Rectangle> Stringrectangles = new ArrayList<>();
+    private ArrayList<Rectangle> Stringrectangles = new ArrayList<>();
 
-    ArrayList<Rectangle> rectangles = new ArrayList<Rectangle>();
+    private ArrayList<Rectangle> rectangles = new ArrayList<Rectangle>();
 
 
-    public Paint() {
+    Paint() {
 
 
         setBackground(Color.gray);
@@ -89,48 +89,46 @@ public class Paint extends JPanel implements MouseMotionListener,MouseListener {
         Blue_Timer blueTimer = new Blue_Timer();
         Red_Timer red_timer = new Red_Timer();
         jButton = new JButton("CHANGE");
+
+        jButton.setBorder( new RoundedBorder(50));
         blueTimer.setBounds(20,20,70,40);
-        red_timer.setBounds(880,20,70,40);
-        jButton.setBounds(450,20,100,50);
-        jButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                if (blueTimer.BTurn)
-                {
-
-
-                    System.out.println("red");
-                   blueTimer.BTurn = false;
-                    blueTimer.buton_pressed = false;
-                    red_timer.buton_pressed = true;
-                    red_timer.rTurn = true;
-                    if (Red_Timer.r == 0) {
-                        red_timer.t.start();
-
-                        Red_Timer.r++;
-                    }
-                    red_timer.jButton.setVisible(false);
-                    red_timer.jButton.setEnabled(false);
+        red_timer.setBounds(910,20,70,40);
+        jButton.setBounds(425,20,150,50);
+        jButton.addActionListener(e -> {
+            if (blueTimer.BTurn)
+            {
 
 
 
-                }else if (red_timer.rTurn)
-                {
+               blueTimer.BTurn = false;
+                blueTimer.buton_pressed = false;
+                red_timer.buton_pressed = true;
+                red_timer.rTurn = true;
+                if (Red_Timer.r == 0) {
+                    red_timer.t.start();
 
-                    System.out.println("blue");
-                    red_timer.rTurn = false;
-                    red_timer.buton_pressed = false;
-                    if (Blue_Timer.b==0){
-                    blueTimer.t.start();
-                    Blue_Timer.b++;
-                    }
-                    blueTimer.jButton.setVisible(false);
-                    blueTimer.setEnabled(false);
-                    blueTimer.BTurn =true;
-                    blueTimer.buton_pressed= true;
-
-
+                    Red_Timer.r++;
                 }
+                red_timer.jButton.setVisible(false);
+                red_timer.jButton.setEnabled(false);
+
+
+
+            }else if (red_timer.rTurn)
+            {
+
+                red_timer.rTurn = false;
+                red_timer.buton_pressed = false;
+                if (Blue_Timer.b==0){
+                blueTimer.t.start();
+                Blue_Timer.b++;
+                }
+                blueTimer.jButton.setVisible(false);
+                blueTimer.setEnabled(false);
+                blueTimer.BTurn =true;
+                blueTimer.buton_pressed= true;
+
+
             }
         });
         add(blueTimer);
@@ -144,7 +142,7 @@ public class Paint extends JPanel implements MouseMotionListener,MouseListener {
 
         try {
             StartServerorClient();
-        } catch (IOException | ClassNotFoundException e) {
+        } catch (IOException e) {
             e.printStackTrace();
         }
         send.start();
@@ -153,11 +151,12 @@ public class Paint extends JPanel implements MouseMotionListener,MouseListener {
         {
             add(jButton);
         }
+
         Scorekeep.start();
         Scorestart.start();
 
 
-        repaint();
+
 
     }
 
@@ -191,8 +190,7 @@ public class Paint extends JPanel implements MouseMotionListener,MouseListener {
 
 
 
-    Rectangle temp;
-    int tempiplace ;
+    private Rectangle temp;
 
     @Override
     public void mouseClicked(MouseEvent e) {
@@ -207,9 +205,8 @@ public class Paint extends JPanel implements MouseMotionListener,MouseListener {
                     tempx[0] = e.getX() - r.x;
                     tempy[0] = e.getY() - r.y;
                     temp = r;
-                    for (int i = 0; i < rectangles.size(); i++) {
-                        if (temp == rectangles.get(i)) {
-                            tempiplace = i;
+                    for (Rectangle rectangle : rectangles) {
+                        if (temp == rectangle) {
                         }
                     }
 
@@ -266,99 +263,7 @@ public class Paint extends JPanel implements MouseMotionListener,MouseListener {
 
 
     //-------------------------------------------------------------------------------------------------------------------
-    Runnable runnable = new Runnable() {
-        @Override
-        public void run() {
-
-            boolean flag = true;
-
-
-            while (flag) {
-                if (StartScreen.temp == 1) {
-                    repaint();
-                    while (flag) {
-                        try {
-
-                            server.sendOutputmouse("-");
-                        } catch (IOException e) {
-                            e.printStackTrace();
-                        }
-                        String i = null;
-                        try {
-                            i = server.getinputmouse().nextLine();
-                        } catch (IOException e) {
-                            e.printStackTrace();
-                        }
-                        if (i.equals("-")) {
-
-                        } else {
-                            for (Rectangle cv : rectangles) {
-                                String[] a = i.split("-");
-                                if (rectangles.get(Integer.parseInt(a[2])) == cv) {
-
-                                    cv.setLocation(Integer.parseInt(a[1]), Integer.parseInt(a[0]));
-                                    repaint();
-                                    /*try {
-                                        server.sendOutputmouse("" + cv.getLocation().y + "-" + cv.getLocation().x+"-"+tempiplace);
-                                    } catch (IOException ex) {
-                                        ex.printStackTrace();
-                                    }*/
-                                }
-                            }
-
-                        }
-                    }
-
-
-
-                } else {
-                    while (flag) {
-
-                        try {
-                            client.sendOutputmouse("-");
-                        } catch (IOException e) {
-                            e.printStackTrace();
-                        }
-                        String i = null;
-                        try {
-                            i = client.getinputmaouse().nextLine();
-                        } catch (IOException e) {
-                            e.printStackTrace();
-                        }
-                        if (i.equals("-")) {
-
-                        } else {
-                            String[] a = i.split("-");
-                            for (Rectangle cv : rectangles) {
-
-                                if (rectangles.get(Integer.parseInt(a[2])) == cv) {
-
-                                    cv.setLocation(Integer.parseInt(a[1]), Integer.parseInt(a[0]));
-                                    repaint();
-                                   /* try {
-                                        server.sendOutputmouse("" + cv.getLocation().y + "-" + cv.getLocation().x);
-                                    } catch (IOException ex) {
-                                        ex.printStackTrace();
-                                    }*/
-                                }
-                            }
-                        }
-
-
-                    }
-                    try {
-                        Thread.sleep(10);
-                    } catch (InterruptedException e) {
-                        e.printStackTrace();
-                    }
-                }
-
-            }
-        }
-
-    };
-    Thread t = new Thread(runnable);
-    Runnable runnable1 = new Runnable() {
+    private Runnable runnable1 = new Runnable() {
         @Override
         public void run() {
             if (StartScreen.temp == 1){
@@ -370,9 +275,7 @@ public class Paint extends JPanel implements MouseMotionListener,MouseListener {
                         try {
                             server.sendOutputmouse(send);
                             Thread.sleep(10);
-                        } catch (IOException e) {
-                            e.printStackTrace();
-                        } catch (InterruptedException e) {
+                        } catch (IOException | InterruptedException e) {
                             e.printStackTrace();
                         }
                         Arraylocation++;
@@ -387,9 +290,7 @@ public class Paint extends JPanel implements MouseMotionListener,MouseListener {
                         try {
                             client.sendOutputmouse(send);
                             Thread.sleep(10);
-                        } catch (IOException e) {
-                            e.printStackTrace();
-                        } catch (InterruptedException e) {
+                        } catch (IOException | InterruptedException e) {
                             e.printStackTrace();
                         }
                         Arraylocation++;
@@ -398,8 +299,8 @@ public class Paint extends JPanel implements MouseMotionListener,MouseListener {
             }
         }
     };
-    Thread send = new Thread(runnable1);
-    Runnable runnable2 = new Runnable() {
+    private Thread send = new Thread(runnable1);
+    private Runnable runnable2 = new Runnable() {
         @Override
         public void run() {
             if (StartScreen.temp == 1){
@@ -421,7 +322,7 @@ public class Paint extends JPanel implements MouseMotionListener,MouseListener {
 
 
                     }
-                    repaint();
+
                 }
             }else {
                 while (true) {
@@ -433,7 +334,6 @@ public class Paint extends JPanel implements MouseMotionListener,MouseListener {
                         e.printStackTrace();
                     }
                     String[] input1 = input.split("-");
-                    int Arraylocation  ;
                     for (Rectangle rectangle : rectangles) {
                         if (rectangle == rectangles.get(Integer.parseInt(input1[0])))
                         {
@@ -445,10 +345,10 @@ public class Paint extends JPanel implements MouseMotionListener,MouseListener {
             }
         }
     };
-    Thread read = new Thread(runnable2);
+    private Thread read = new Thread(runnable2);
 
 
-    void StartServerorClient() throws IOException, ClassNotFoundException {
+    private void StartServerorClient() throws IOException {
         if (StartScreen.temp==1)
         {
             Server();
@@ -457,138 +357,126 @@ public class Paint extends JPanel implements MouseMotionListener,MouseListener {
             Client();
         }
     }
-    void  Server() throws IOException {
+    private void  Server() {
         server = new server();
         server.setServer(Port);
 
     }
-    void Client() throws IOException {
+    private void Client() {
         client = new client();
         client.setclient(TalkScreen.Ipaddr,Port);
     }
-    Runnable fitRectangle  = new Runnable() {
-        @Override
-        public void run() {
-            while(true)
-            {
-                for(Rectangle r : Stringrectangles)
-                {
-                    for (Rectangle t : rectangles)
-                    {
-                        if (r.contains(t.x,t.y))
-                        {
-                            t.setLocation(r.x,r.y);
-                            repaint();
-                        }
-                    }
-                }
-                try {
-                    Thread.sleep(15);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-            }
-
-        }
-    };
-    Thread fitRectangle1 = new Thread(fitRectangle);
-
-    Runnable runnable3 = new Runnable() {
-        @Override
-        public void run() {
-            while (true) {
-                for (Rectangle a : Stringrectangles) {
-                    for (Rectangle b : rectangles) {
-                        if (a.contains(b)) {
-                            String a1 = null;
-                            if (Card.list.get(Stringrectangles.indexOf(a)).color.equalsIgnoreCase("black") && rectangles.indexOf(b) < 24 && rectangles.indexOf(b) > 12) {
-                                Score.isBlueWon = false;
-                                Score.isGameEnd = true;
-
-                                break;
-                            } else if (Card.list.get(Stringrectangles.indexOf(a)).color.equalsIgnoreCase("black") && rectangles.indexOf(b) < 12) {
-                                Score.isBlueWon = true;
-                                Score.isGameEnd = true;
-
-
-                                break;
-                            } else if (rectangles.indexOf(b) < 12) {
-                                a1 = "pink";
-                            } else if (rectangles.indexOf(b) < 24 && rectangles.indexOf(b) > 12) {
-                                    a1 = "blue";
-                            }
-                            Card.list.get(Stringrectangles.indexOf(a)).team = a1;
-                        }
-                    }
-                }
-                try {
-                    Thread.sleep(1000);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-            }
-
-        }
-    };
-    Thread Scorekeep = new Thread(runnable3);
-    Runnable runnable4 = new Runnable() {
-        @Override
-        public void run() {
-
-            boolean running = true;
-            int lastscoreBlue = 0, lastScorePink = 0;
-            while (running)
-            {
-                for (Card1 a : Card.list)
-                {
-                    if (a.team.equalsIgnoreCase("blue"))
-                    {
-                        Score.BlueScore++;
-                    }else if (a.team.equalsIgnoreCase("pink"))
-                    {
-                        Score.pinkScore++;
-                    }
-
-                }
-                Score.BlueScore -= lastscoreBlue;
-                lastscoreBlue = Score.BlueScore;
-                Score.pinkScore -= lastScorePink;
-                lastScorePink = Score.pinkScore;
-                try {
-                    Thread.sleep(500);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-            }
-        }
-    };
-    Thread Scorestart = new Thread(runnable4);
-
-
-Runnable runnable6 = new Runnable() {
-    @Override
-    public void run() {
-
-        while (true)
+    private Runnable fitRectangle  = () -> {
+        while(true)
         {
+            for(Rectangle r : Stringrectangles)
+            {
+                for (Rectangle t : rectangles)
+                {
+                    if (r.contains(t.x,t.y))
+                    {
+                        t.setLocation(r.x,r.y);
+                        repaint();
+                    }
+                }
+            }
             try {
-                Thread.sleep(8500);
+                Thread.sleep(15);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-            Sound.music();
+        }
+
+    };
+    private Thread fitRectangle1 = new Thread(fitRectangle);
+
+    private Runnable runnable3 = () -> {
+        while (true) {
+            for (Rectangle a : Stringrectangles) {
+                for (Rectangle b : rectangles) {
+                    if (a.contains(b)) {
+                        String a1 = null;
+                        if (Card.list.get(Stringrectangles.indexOf(a)).color.equalsIgnoreCase("black") && rectangles.indexOf(b) < 24 && rectangles.indexOf(b) > 12) {
+                            Score.isBlueWon = false;
+                            Score.isGameEnd = true;
+
+                            break;
+                        } else if (Card.list.get(Stringrectangles.indexOf(a)).color.equalsIgnoreCase("black") && rectangles.indexOf(b) < 12) {
+                            Score.isBlueWon = true;
+                            Score.isGameEnd = true;
 
 
+                            break;
+                        } else if (rectangles.indexOf(b) < 12) {
+                            a1 = "pink";
+                        } else if (rectangles.indexOf(b) < 24 && rectangles.indexOf(b) > 12) {
+                                a1 = "blue";
+                        }
+                        Card.list.get(Stringrectangles.indexOf(a)).team = a1;
+                    }
+                }
+            }
             try {
-                Thread.sleep(2500);
+                Thread.sleep(1000);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
+        }
+
+    };
+    private Thread Scorekeep = new Thread(runnable3);
+    private Runnable runnable4 = () -> {
+
+        boolean running = true;
+        int lastscoreBlue = 0, lastScorePink = 0;
+        while (running)
+        {
+            for (Card1 a : Card.list)
+            {
+                if (a.team.equalsIgnoreCase("blue"))
+                {
+                    Score.BlueScore++;
+                }else if (a.team.equalsIgnoreCase("pink"))
+                {
+                    Score.pinkScore++;
+                }
+
+            }
+            Score.BlueScore -= lastscoreBlue;
+            lastscoreBlue = Score.BlueScore;
+            Score.pinkScore -= lastScorePink;
+            lastScorePink = Score.pinkScore;
+            try {
+                Thread.sleep(500);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    };
+    private Thread Scorestart = new Thread(runnable4);
+
+
+private Runnable runnable6 = () -> {
+
+    while (true)
+    {
+        try {
+            Thread.sleep(8500);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        Sound.music();
+
+
+        try {
+            Thread.sleep(2500);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
         }
     }
 };
 
-Thread sound = new Thread(runnable6);
+private Thread sound = new Thread(runnable6);
 
 }
 

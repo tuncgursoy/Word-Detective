@@ -1,15 +1,13 @@
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
-public class StartScreen extends JFrame
+class StartScreen extends JFrame
 {
     static int temp = 0 ;
      static Card card;
-    public static final Color VERY_LIGHT_YELLOW = new Color(255,255,204);
+    private static final Color VERY_LIGHT_YELLOW = new Color(255,255,204);
 
     StartScreen()
     {
@@ -35,7 +33,7 @@ public class StartScreen extends JFrame
         jLabel.setBackground(Color.DARK_GRAY);
         jLabel.setForeground(Color.WHITE);
         JRadioButton Server = new JRadioButton("Server");
-        Server.setBounds(75,400,70,40);
+        Server.setBounds(70,400,80,40);
         jPanel.add(Server);
         Server.setBackground(Color.DARK_GRAY);
         Server.setForeground(Color.WHITE);
@@ -119,34 +117,31 @@ public class StartScreen extends JFrame
 
         StartButton.setBounds(100,200,100,40);
         StartButton.setBackground(VERY_LIGHT_YELLOW);
-        StartButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                if (Server.isSelected())
-                {
-                     card = new Card();
-                    setVisible(false);
-                    temp++;
-                    thread.start();
+        StartButton.addActionListener(e -> {
+            if (Server.isSelected())
+            {
+                 card = new Card();
+                setVisible(false);
+                temp++;
+                thread.start();
 
 
 
 
-                }else if (Client.isSelected())
-                {
-                    card = new Card();
-                    temp = 0 ;
-                    setVisible(false);
-                    new TalkScreen().setVisible(true);
-                    new GameScreen().setVisible(true);
+            }else if (Client.isSelected())
+            {
+                card = new Card();
+                temp = 0 ;
+                setVisible(false);
+                new TalkScreen().setVisible(true);
+                new GameScreen().setVisible(true);
 
 
-                }
-                else
-                    {
-                        JOptionPane.showMessageDialog(null,"Please select Server or Client");
-                    }
             }
+            else
+                {
+                    JOptionPane.showMessageDialog(null,"Please select Server or Client");
+                }
         });
         jPanel.add(StartButton);
 
@@ -158,32 +153,21 @@ public class StartScreen extends JFrame
         RulesButton.setBounds(100,245,100,40);
         RulesButton.setBackground(VERY_LIGHT_YELLOW);
         jPanel.add(RulesButton);
-        RulesButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                new RulesScreen().setVisible(true);
-            }
-        });
-        ExitButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                setVisible(false);
-                dispose();
-            }
+        RulesButton.addActionListener(e -> new RulesScreen().setVisible(true));
+        ExitButton.addActionListener(e -> {
+            setVisible(false);
+            dispose();
         });
         repaint();
 
     }
 
-    Runnable run = new Runnable() {
-        @Override
-        public void run() {
-            new TalkScreen().setVisible(true);
-            new GameScreen().setVisible(true);
+    private Runnable run = () -> {
+        new TalkScreen().setVisible(true);
+        new GameScreen().setVisible(true);
 
 
-            new TableScreen().setVisible(true);
-        }
+        new TableScreen().setVisible(true);
     };
-    Thread thread = new Thread(run);
+    private Thread thread = new Thread(run);
 }

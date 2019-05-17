@@ -1,17 +1,13 @@
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.awt.event.KeyEvent;
 import java.io.IOException;
 import java.net.Inet4Address;
-import java.util.ArrayList;
 
-public class TalkScreen extends JFrame
+class TalkScreen extends JFrame
 {
      private int port=6788;
-    JTextArea textArea;
-    JTextField textField;
+    private JTextArea textArea;
+    private JTextField textField;
      static String Ipaddr;
      private client client;
        private server server;
@@ -19,7 +15,7 @@ public class TalkScreen extends JFrame
     static JButton SendButton;
 
 
-    Runnable runnable = new Runnable() {
+    private Runnable runnable = new Runnable() {
         @Override
         public void run() {
 
@@ -85,12 +81,7 @@ public class TalkScreen extends JFrame
 
 
     };
-    Thread thread = new Thread(runnable);
-
-
-    boolean IStrue = true;
-
-
+    private Thread thread = new Thread(runnable);
 
 
     TalkScreen()
@@ -102,8 +93,6 @@ public class TalkScreen extends JFrame
             StartServerorClient();
         } catch (IOException e) {
             e.printStackTrace();
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
         }
 
 
@@ -111,7 +100,7 @@ public class TalkScreen extends JFrame
         setResizable(false);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         Dimension dimension = new Dimension(Toolkit.getDefaultToolkit().getScreenSize());
-        setLocation((dimension.width-this.getSize().width)/2,(dimension.height-this.getSize().height)/2);
+        setLocation((dimension.width-this.getSize().width),(dimension.height-this.getSize().height));
 
 
         JPanel jPanel = new JPanel();
@@ -148,32 +137,29 @@ public class TalkScreen extends JFrame
         SendButton.setBounds(320,510,70,40);
         jPanel.add(SendButton);
 
-        SendButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                if (StartScreen.temp==1)
+        SendButton.addActionListener(e -> {
+            if (StartScreen.temp==1)
+            {
+                String i =textField.getText();
+                textArea.append("["+UserName+"]:"+i+"\n");
+                textField.setText("");
+                try
+                {
+                    server.sendOutput("["+UserName+"]:"+i+"\n");
+                } catch (IOException e1) {
+                    e1.printStackTrace();
+                }
+            }else
                 {
                     String i =textField.getText();
                     textArea.append("["+UserName+"]:"+i+"\n");
                     textField.setText("");
-                    try
-                    {
-                        server.sendOutput("["+UserName+"]:"+i+"\n");
+                    try {
+                        client.sendOutput("["+UserName+"]:"+i+"\n");
                     } catch (IOException e1) {
                         e1.printStackTrace();
                     }
-                }else
-                    {
-                        String i =textField.getText();
-                        textArea.append("["+UserName+"]:"+i+"\n");
-                        textField.setText("");
-                        try {
-                            client.sendOutput("["+UserName+"]:"+i+"\n");
-                        } catch (IOException e1) {
-                            e1.printStackTrace();
-                        }
-                    }
-            }
+                }
         });
         thread.start();
 
@@ -186,7 +172,7 @@ public class TalkScreen extends JFrame
 
     }
 
-    void StartServerorClient() throws IOException, ClassNotFoundException {
+    private void StartServerorClient() throws IOException {
         if (StartScreen.temp==1)
         {
 
@@ -208,24 +194,16 @@ public class TalkScreen extends JFrame
                 Client();
             }
     }
-    void  Server() throws IOException {
+    private void  Server() throws IOException {
          server = new server();
          server.setServer(port);
         server.sendArraylist(StartScreen.card.list);
     }
-    void Client() throws IOException, ClassNotFoundException {
+    private void Client() throws IOException {
         client = new client();
         client.setclient(Ipaddr,port);
         StartScreen.card.list.clear();
         StartScreen.card.list =client.getobject();
     }
 
-    public void keyPressed(KeyEvent e) {
-        System.out.println("Key Pressed " + KeyEvent.getKeyText(e.getKeyCode()));
-        if("Right".equals(KeyEvent.getKeyText(e.getKeyCode())))
-            System.out.println("Right Button Detected");
-        if(e.getKeyCode()==KeyEvent.VK_ENTER)
-        {SendButton.doClick();}
-
-    }
 }

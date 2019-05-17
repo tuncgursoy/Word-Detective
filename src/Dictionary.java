@@ -2,9 +2,9 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Random;
 
-public class Dictionary {
-	String randomWord = "";
-   static ArrayList<String> dictionary = new ArrayList<String> (Arrays.asList(
+class Dictionary {
+	String randomWord;
+   private static ArrayList<String> dictionary = new ArrayList<String> (Arrays.asList(
 	"Adult",
 	"Aeroplane",
 	"Air",
@@ -200,8 +200,8 @@ public class Dictionary {
 	"X-ray"
 	)
 );
-   static ArrayList<Integer> a12 = new ArrayList<>();
-   static String randomWord() {
+   private static ArrayList<Integer> a12 = new ArrayList<>();
+   private static String randomWord() {
 	   Random r = new Random();
 	   int low = 1, high = 193;
 	   int result = r.nextInt(high-low) + low;
@@ -219,7 +219,7 @@ public class Dictionary {
 	   return dictionary.get(result);
    }
    
-   public Dictionary() {
-	   randomWord = this.randomWord(); 
+   Dictionary() {
+	   randomWord = randomWord();
    }
 }

@@ -12,8 +12,7 @@ import java.util.Scanner;
     private Scanner inputStream;
      private PrintWriter outputstream;
    private Socket socket;
-    void setclient(String ip,int port) throws IOException
-    {
+    void setclient(String ip,int port) {
         try {
              socket = new Socket(ip,port);
             System.out.println("--------Connected---------");
@@ -33,12 +32,8 @@ import java.util.Scanner;
         outputstream.println(send);
         outputstream.flush();
     }
-    void exit()
-    {
-        inputStream.close();
-        outputstream.close();
-    }
-    ArrayList<Card1> getobject() throws IOException, ClassNotFoundException {
+
+    ArrayList<Card1> getobject() throws IOException {
 
         inputStream = new Scanner(new InputStreamReader(socket.getInputStream()));
         ArrayList<Card1> temp = new ArrayList<>();
@@ -56,7 +51,7 @@ import java.util.Scanner;
                 list2[i] = a;
                 i++;
             }
-            i = 0;
+
             for (String a : list2) {
                 try {
                     Thread.sleep(300);
@@ -67,7 +62,7 @@ import java.util.Scanner;
                     temp1 = a.split("--");
                 }catch (AWTError error)
                 {
-
+                    System.out.println("Rrror: "+ error);
                 }
                 try {
                     temp.add(new Card1(temp1[0], temp1[1], temp1[2]));

@@ -5,16 +5,15 @@ import java.io.PrintWriter;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.ArrayList;
-import java.util.Base64;
 import java.util.Scanner;
 
 
-public  class server
+class server
 {
     private PrintWriter outputstream;
     private  Scanner inputStream;
     private  Socket socket;
-    public void setServer(int port) throws IOException {
+    void setServer(int port) {
         try {
             System.out.println("--------Waiting for Connetion-------");
             ServerSocket server = new ServerSocket(port);
@@ -39,10 +38,10 @@ public  class server
     }
 
      void sendArraylist(ArrayList<Card1> list) throws IOException {
-         String send = new String();
+         StringBuilder send = new StringBuilder(new String());
          for (Card1 a : list)
         {
-            send +=((a.CardString+"--"+a.color+"--"+a.team+","));
+            send.append(a.CardString).append("--").append(a.color).append("--").append(a.team).append(",");
         }
 
          outputstream = new PrintWriter(new DataOutputStream(socket.getOutputStream()));
@@ -50,15 +49,7 @@ public  class server
          outputstream.flush();
     }
 
-    void exit()
-    {
-        inputStream.close();
-        outputstream.close();
-    }
 
-    public Socket getSocket() {
-        return socket;
-    }
     Scanner getinputmouse() throws IOException {
         inputStream = new Scanner(new InputStreamReader(socket.getInputStream()));
 

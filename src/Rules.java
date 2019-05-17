@@ -1,9 +1,4 @@
-import java.awt.Canvas;
-import java.awt.Color;
-import java.awt.Graphics;
-
-
-import javax.swing.JFrame ;
+import java.awt.*;
 public class Rules extends Canvas {
 	public void paint(Graphics g) {
 		g.setColor(Color.black);
