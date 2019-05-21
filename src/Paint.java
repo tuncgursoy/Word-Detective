@@ -93,7 +93,7 @@ public class Paint extends JPanel implements MouseMotionListener,MouseListener {
         jButton.setBorder( new RoundedBorder(50));
         blueTimer.setBounds(20,20,70,40);
         red_timer.setBounds(910,20,70,40);
-        jButton.setBounds(425,20,150,50);
+        jButton.setBounds(425,20,170,50);
         jButton.addActionListener(e -> {
             if (blueTimer.BTurn)
             {
