@@ -176,7 +176,7 @@ class TalkScreen extends JFrame
         if (StartScreen.temp==1)
         {
 
-            JOptionPane.showMessageDialog(null, "Please Write this Ip address and port number like to other PC after press the ok\n"+ Inet4Address.getLocalHost().getHostAddress());
+            JOptionPane.showMessageDialog(null, "Please Write this Ip address and port number write to other PC after press the ok\n"+ Inet4Address.getLocalHost().getHostAddress());
 
             Server();
         }else
