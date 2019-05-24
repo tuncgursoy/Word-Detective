@@ -1,0 +1,8 @@
+How to Run The Game
+1-Add j1.0.1.jar project module
+2-When Game started, first we need to first server set up and after write the ip to other pc
+first ok to server joptionpane which shows ip address.
+3-press ok to joptionpane which you write ip address.
+4-Wait 17 seconds to connect 2pc's if after 30 seconds did not respond restart the program.
+5-Sometimes Server cannot render paint screen if it happen drag one of the colored rectangle
+6-Enjoy:)

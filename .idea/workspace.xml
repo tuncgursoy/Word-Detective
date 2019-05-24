@@ -7,28 +7,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="887b8ef5-27d1-4642-8232-1e640ed1c2b3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/HowToRun.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jl1.0.1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Word_Detective_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/Word_Detective_jar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Word-Detective.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Word-Detective.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Word-Detective/Blue_Timer$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Word-Detective/Blue_Timer$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Word-Detective/Blue_Timer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Word-Detective/Blue_Timer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Word-Detective/Card.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Word-Detective/Card.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Word-Detective/Card1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Word-Detective/Card1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Word-Detective/Dictionary.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Word-Detective/Dictionary.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Word-Detective/GameScreen.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Word-Detective/GameScreen.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Word-Detective/Paint$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Word-Detective/Paint$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Word-Detective/Paint.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Word-Detective/Paint.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Word-Detective/Red_Timer$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Word-Detective/Red_Timer$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Word-Detective/Red_Timer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Word-Detective/Red_Timer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Word-Detective/StartScreen$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Word-Detective/StartScreen$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Word-Detective/StartScreen$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Word-Detective/StartScreen$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Word-Detective/StartScreen.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Word-Detective/StartScreen.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Word-Detective/TalkScreen$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Word-Detective/TalkScreen$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Word-Detective/TalkScreen.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Word-Detective/TalkScreen.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Word-Detective/client.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Word-Detective/client.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Word-Detective/main1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Word-Detective/main1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Word-Detective/main2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Word-Detective/server.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Word-Detective/server.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Blue_Timer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Blue_Timer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Paint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Paint.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -44,21 +29,12 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Score.java">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Paint.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/server.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="39" column="21" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="21" />
+            <state relative-caret-position="242">
+              <caret line="320" column="112" lean-forward="true" selection-start-line="320" selection-start-column="112" selection-end-line="320" selection-end-column="112" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -67,25 +43,41 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/StartScreen.java">
+        <entry file="file://$PROJECT_DIR$/src/main1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2533">
-              <caret line="152" column="46" selection-start-line="152" selection-start-column="46" selection-end-line="152" selection-end-column="46" />
+            <state>
+              <caret column="13" selection-start-column="13" selection-end-column="13" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#68#69#0" expanded="true" />
+                <element signature="e#118#119#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/TableScreen.java">
+        <entry file="file://$PROJECT_DIR$/HowToRun.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="17">
+              <caret line="1" column="35" selection-start-line="1" selection-start-column="35" selection-end-line="1" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Blue_Timer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="16" selection-start-line="16" selection-end-line="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Card1.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -93,62 +85,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/GameScreen.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/TalkScreen.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
-              <caret line="168" lean-forward="true" selection-start-line="168" selection-end-line="168" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/RoundedBorder.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/RulesScreen.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Rules.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Table.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+            <state relative-caret-position="714">
+              <caret line="43" column="34" selection-start-line="43" selection-start-column="34" selection-end-line="43" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -167,9 +105,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>jPanel</find>
-      <find>port</find>
-      <find>threa</find>
       <find>temp</find>
       <find>sleep</find>
       <find>rectangles</find>
@@ -197,6 +132,9 @@
       <find>repaint</find>
       <find>isGame</find>
       <find>like</find>
+      <find>exception</find>
+      <find>e</find>
+      <find>Error</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -205,7 +143,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Gereksiz/as.java" />
         <option value="$PROJECT_DIR$/src/deneme2/server.java" />
         <option value="$PROJECT_DIR$/src/deneme2/CanvasFormClient.java" />
         <option value="$PROJECT_DIR$/src/deneme2/Canvas_form.java" />
@@ -240,7 +177,6 @@
         <option value="$PROJECT_DIR$/src/Score.java" />
         <option value="$PROJECT_DIR$/src/GenericRoundedButton.java" />
         <option value="$PROJECT_DIR$/src/RoundedBorder.java" />
-        <option value="$PROJECT_DIR$/src/Blue_Timer.java" />
         <option value="$PROJECT_DIR$/src/Red_Timer.java" />
         <option value="$PROJECT_DIR$/src/Card.java" />
         <option value="$PROJECT_DIR$/src/Card1.java" />
@@ -254,8 +190,10 @@
         <option value="$PROJECT_DIR$/src/TalkScreen.java" />
         <option value="$PROJECT_DIR$/src/TableScreen.java" />
         <option value="$PROJECT_DIR$/src/GameScreen.java" />
-        <option value="$PROJECT_DIR$/src/Paint.java" />
         <option value="$PROJECT_DIR$/src/StartScreen.java" />
+        <option value="$PROJECT_DIR$/src/Blue_Timer.java" />
+        <option value="$PROJECT_DIR$/HowToRun.txt" />
+        <option value="$PROJECT_DIR$/src/Paint.java" />
       </list>
     </option>
   </component>
@@ -266,10 +204,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="222" />
-    <option name="y" value="86" />
-    <option name="width" value="524" />
-    <option name="height" value="586" />
+    <option name="x" value="334" />
+    <option name="y" value="129" />
+    <option name="width" value="784" />
+    <option name="height" value="879" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -277,25 +215,53 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Course" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="Word-Detective" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Word-Detective" type="462c0819:PsiDirectoryNode" />
+              <item name="Word-Detective1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Word-Detective1" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Word-Detective" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Word-Detective" type="462c0819:PsiDirectoryNode" />
+              <item name="Word-Detective1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Word-Detective1" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Word-Detective1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Word-Detective1" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Word-Detective1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Word-Detective1" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
+              <item name="Word_Detective_jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Word-Detective1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Word-Detective1" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="production" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Word-Detective1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Word-Detective1" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Word-Detective1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Course" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -313,19 +279,15 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="com.intellij.jarRepository.settings.RemoteRepositoriesConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\User\IdeaProjects\Word-Detective1" />
-      <recent name="C:\Users\User\IdeaProjects\Word-Detective1\src" />
-      <recent name="C:\Users\User\IdeaProjects\Word-Detective\src\deneme2" />
-      <recent name="C:\Users\User\IdeaProjects\Word-Detective\src" />
-      <recent name="C:\Users\User\IdeaProjects\Word-Detective\src\deneme4" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="deneme4" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\User\IdeaProjects\Word-Detective1" />
@@ -340,8 +302,12 @@
       <recent name="deneme4" />
       <recent name="Deneme5" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="deneme4" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User\IdeaProjects\Word-Detective1" />
+      <recent name="C:\Users\User\IdeaProjects\Word-Detective1\src" />
+      <recent name="C:\Users\User\IdeaProjects\Word-Detective\src\deneme2" />
+      <recent name="C:\Users\User\IdeaProjects\Word-Detective\src" />
+      <recent name="C:\Users\User\IdeaProjects\Word-Detective\src\deneme4" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -356,36 +322,10 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.main1">
+  <component name="RunManager" selected="JAR Application.Word-Detective.jar">
     <configuration name="Sound" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Sound" />
       <module name="Word-Detective" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Deneme7.main" />
-      <module name="Word-Detective" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Deneme7.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="main1 (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Deneme7.main1" />
-      <module name="Word-Detective" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Deneme7.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -404,13 +344,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Word-Detective.jar" type="JarApplication" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/out/artifacts/Word_Detective_jar/Word-Detective.jar" />
+      <method v="2" />
+    </configuration>
+    <configuration name="jl1.0.1.jar" type="JarApplication" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/jl1.0.1.jar" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.main1" />
+        <item itemvalue="JAR Application.Word-Detective.jar" />
+        <item itemvalue="JAR Application.jl1.0.1.jar" />
         <item itemvalue="Application.main2" />
         <item itemvalue="Application.Sound" />
-        <item itemvalue="Application.main (1)" />
-        <item itemvalue="Application.main1 (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -662,7 +610,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="214381000" />
+    <option name="totallyTimeSpent" value="215143000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -674,9 +622,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49551168" visible="true" weight="0.19433199" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49551168" visible="true" weight="0.13539445" />
       <window_info id="Structure" order="1" sideWeight="0.50448835" side_tool="true" weight="0.19060403" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -687,7 +636,7 @@
       <window_info anchor="bottom" id="Duplicate detector" order="0" weight="0.3286119" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.32761088" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.4986577" weight="0.26998225" />
+      <window_info active="true" anchor="bottom" id="Run" order="3" sideWeight="0.4986577" visible="true" weight="0.2689512" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.39943343" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -699,6 +648,7 @@
       <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="bottom" id="Version Control" order="13" sideWeight="0.49932885" weight="0.3281412" />
       <window_info anchor="bottom" id="Messages" order="14" weight="0.3179396" />
+      <window_info anchor="right" id="Coverage" side_tool="true" weight="0.32995737" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -833,8 +783,10 @@
       </breakpoints>
     </breakpoint-manager>
   </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Word_Detective1$jl1_0_1_jar.ic" NAME="jl1.0.1.jar Coverage Results" MODIFIED="1558696935090" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk-11.0.1/lib/src.zip!/java.desktop/java/awt/EventDispatchThread.java" />
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -901,20 +853,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main2.java" />
-    <entry file="file://$PROJECT_DIR$/src/Paint.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="144" column="24" selection-start-line="144" selection-start-column="24" selection-end-line="144" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Card1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        <state relative-caret-position="170">
+          <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
         </state>
       </provider>
     </entry>
@@ -928,28 +870,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="13" selection-start-column="13" selection-end-column="13" />
-          <folding>
-            <element signature="e#68#69#0" expanded="true" />
-            <element signature="e#118#119#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Red_Timer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
           <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Blue_Timer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
@@ -999,8 +923,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/GameScreen.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+        <state relative-caret-position="714">
+          <caret line="43" column="34" selection-start-line="43" selection-start-column="34" selection-end-line="43" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1051,6 +975,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Blue_Timer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="13" selection-start-column="13" selection-end-column="13" />
+          <folding>
+            <element signature="e#68#69#0" expanded="true" />
+            <element signature="e#118#119#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HowToRun.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="35" selection-start-line="1" selection-start-column="35" selection-end-line="1" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Paint.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="320" column="112" lean-forward="true" selection-start-line="320" selection-start-column="112" selection-end-line="320" selection-end-column="112" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
   </component>
   <component name="masterDetails">
     <states>
@@ -1092,7 +1051,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>12</last-edited>
+          <last-edited>1.8.0_151</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

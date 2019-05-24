@@ -15,6 +15,7 @@ class Blue_Timer extends JPanel {
 
      boolean BTurn;
 
+
     Blue_Timer() {
         try {
             StartServerorClient();

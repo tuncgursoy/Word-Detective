@@ -317,7 +317,12 @@ public class Paint extends JPanel implements MouseMotionListener,MouseListener {
                     for (Rectangle rectangle : rectangles) {
                         if (rectangle == rectangles.get(Integer.parseInt(input1[0])))
                         {
-                            rectangle.setLocation(Integer.parseInt(input1[1]),Integer.parseInt(input1[2]));
+                            try {
+                                rectangle.setLocation(Integer.parseInt(input1[1]), Integer.parseInt(input1[2]));
+                            }catch (Exception e )
+                            {
+                                System.out.println("");
+                            }
                         }
 
 
