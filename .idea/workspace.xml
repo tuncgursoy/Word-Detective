@@ -7,13 +7,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="887b8ef5-27d1-4642-8232-1e640ed1c2b3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/HowToRun.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jl1.0.1.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Word_Detective_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/Word_Detective_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Blue_Timer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Blue_Timer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Paint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Paint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Word-Detective/Blue_Timer$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Word-Detective/Blue_Timer$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Word-Detective/Blue_Timer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Word-Detective/Blue_Timer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Word-Detective/Card.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Word-Detective/Card.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Word-Detective/Card1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Word-Detective/Card1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Word-Detective/Dictionary.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Word-Detective/Dictionary.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Word-Detective/GameScreen.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Word-Detective/GameScreen.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Word-Detective/Paint$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Word-Detective/Paint$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Word-Detective/Paint.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Word-Detective/Paint.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Word-Detective/Red_Timer$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Word-Detective/Red_Timer$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Word-Detective/Red_Timer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Word-Detective/Red_Timer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Word-Detective/StartScreen$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Word-Detective/StartScreen$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Word-Detective/StartScreen$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Word-Detective/StartScreen$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Word-Detective/StartScreen.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Word-Detective/StartScreen.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Word-Detective/TalkScreen$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Word-Detective/TalkScreen$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Word-Detective/TalkScreen.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Word-Detective/TalkScreen.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Word-Detective/client.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Word-Detective/client.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Word-Detective/main1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Word-Detective/main1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Word-Detective/server.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Word-Detective/server.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,12 +41,12 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Paint.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="320" column="112" lean-forward="true" selection-start-line="320" selection-start-column="112" selection-end-line="320" selection-end-column="112" />
+            <state relative-caret-position="5372">
+              <caret line="320" column="112" selection-start-line="320" selection-start-column="112" selection-end-line="320" selection-end-column="112" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -42,11 +54,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="13" selection-start-column="13" selection-end-column="13" />
+            <state relative-caret-position="119">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
               <folding>
                 <element signature="e#68#69#0" expanded="true" />
                 <element signature="e#118#119#0" expanded="true" />
@@ -59,7 +71,7 @@
         <entry file="file://$PROJECT_DIR$/HowToRun.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="17">
-              <caret line="1" column="35" selection-start-line="1" selection-start-column="35" selection-end-line="1" selection-end-column="35" />
+              <caret line="1" column="31" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -192,8 +204,8 @@
         <option value="$PROJECT_DIR$/src/GameScreen.java" />
         <option value="$PROJECT_DIR$/src/StartScreen.java" />
         <option value="$PROJECT_DIR$/src/Blue_Timer.java" />
-        <option value="$PROJECT_DIR$/HowToRun.txt" />
         <option value="$PROJECT_DIR$/src/Paint.java" />
+        <option value="$PROJECT_DIR$/HowToRun.txt" />
       </list>
     </option>
   </component>
@@ -215,9 +227,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Course" />
       <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="Course" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -458,6 +470,7 @@
       <workItem from="1558467197960" duration="176000" />
       <workItem from="1558471868757" duration="808000" />
       <workItem from="1558473284917" duration="233000" />
+      <workItem from="1558861236295" duration="4000" />
     </task>
     <task id="LOCAL-00001" summary="Prime15550 second update">
       <created>1556373001388</created>
@@ -606,11 +619,18 @@
       <option name="project" value="LOCAL" />
       <updated>1558081903325</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Prime15550 Update  24.05.2019&#10;&#10;!!!!!!!!!!!!!!!!Final!!!!!!!!!!!!!!!!!!!">
+      <created>1558697427263</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1558697427263</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="215143000" />
+    <option name="totallyTimeSpent" value="216025000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -623,9 +643,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49551168" visible="true" weight="0.13539445" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49551168" visible="true" weight="0.13646056" />
       <window_info id="Structure" order="1" sideWeight="0.50448835" side_tool="true" weight="0.19060403" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -636,7 +655,7 @@
       <window_info anchor="bottom" id="Duplicate detector" order="0" weight="0.3286119" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.32761088" />
-      <window_info active="true" anchor="bottom" id="Run" order="3" sideWeight="0.4986577" visible="true" weight="0.2689512" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.4986577" weight="0.2689512" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.39943343" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -648,7 +667,6 @@
       <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="bottom" id="Version Control" order="13" sideWeight="0.49932885" weight="0.3281412" />
       <window_info anchor="bottom" id="Messages" order="14" weight="0.3179396" />
-      <window_info anchor="right" id="Coverage" side_tool="true" weight="0.32995737" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -658,6 +676,7 @@
       <window_info anchor="right" id="Database" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Coverage" order="9" side_tool="true" weight="0.32995737" />
     </layout>
     <layout-to-restore>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49551168" visible="true" weight="0.4563107" />
@@ -757,7 +776,8 @@
     <MESSAGE value="Prime15550 Update  15.05.2019" />
     <MESSAGE value="Prime15550 Update  16.05.2019&#10;&#10;Finished" />
     <MESSAGE value="Prime15550 Update  17.05.2019&#10;&#10;code cleaned up&#10;Rounded button added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Prime15550 Update  17.05.2019&#10;&#10;code cleaned up&#10;Rounded button added" />
+    <MESSAGE value="Prime15550 Update  24.05.2019&#10;&#10;!!!!!!!!!!!!!!!!Final!!!!!!!!!!!!!!!!!!!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Prime15550 Update  24.05.2019&#10;&#10;!!!!!!!!!!!!!!!!Final!!!!!!!!!!!!!!!!!!!" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -853,13 +873,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main2.java" />
-    <entry file="file://$PROJECT_DIR$/src/Card1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Sound.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -921,16 +934,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/GameScreen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="43" column="34" selection-start-line="43" selection-start-column="34" selection-end-line="43" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/RoundedBorder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -975,20 +978,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Blue_Timer.java">
+    <entry file="file://$PROJECT_DIR$/src/Paint.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="13" selection-start-column="13" selection-end-column="13" />
+        <state relative-caret-position="5372">
+          <caret line="320" column="112" selection-start-line="320" selection-start-column="112" selection-end-line="320" selection-end-column="112" />
           <folding>
-            <element signature="e#68#69#0" expanded="true" />
-            <element signature="e#118#119#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -996,16 +991,41 @@
     <entry file="file://$PROJECT_DIR$/HowToRun.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
-          <caret line="1" column="35" selection-start-line="1" selection-start-column="35" selection-end-line="1" selection-end-column="35" />
+          <caret line="1" column="31" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Paint.java">
+    <entry file="file://$PROJECT_DIR$/src/Blue_Timer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="320" column="112" lean-forward="true" selection-start-line="320" selection-start-column="112" selection-end-line="320" selection-end-column="112" />
+        <state relative-caret-position="238">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Card1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GameScreen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="43" column="34" selection-start-line="43" selection-start-column="34" selection-end-line="43" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="e#68#69#0" expanded="true" />
+            <element signature="e#118#119#0" expanded="true" />
           </folding>
         </state>
       </provider>

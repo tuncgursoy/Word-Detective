@@ -1,5 +1,5 @@
 How to Run The Game
-1-Add j1.0.1.jar project module
+1-Add j1.0.1.jar project module and set your pc's scake %100.
 2-When Game started, first we need to first server set up and after write the ip to other pc
 first ok to server joptionpane which shows ip address.
 3-press ok to joptionpane which you write ip address.
